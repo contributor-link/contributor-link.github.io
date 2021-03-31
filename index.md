@@ -2,40 +2,21 @@
 layout: default
 ---
 
-## Welcome to GitHub Pages
+Contributor.Link connects participating free and open source projects with new contributors of all experience levels and backgrounds, using gateway tools that guide contributors to projects in need of their specific talents. Projects within Contributor.Link use standardized processes to optimize their projects for all potential contributors.
 
-You can use the [editor on GitHub](https://github.com/RedHatOfficial/contributor.link.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Contributor.Link believes that talent and passion are just one connection away from world-changing work. We find and make these connections so that contributors from all different locations, skill levels, and backgrounds can find opportunities to get involved in this work.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Looking for great projects!
 
-### Markdown
+We are looking for projects that need contributors! When your project participates in Contributor.Link, we will provide a connection between your project and new contributors. As Contributor.Link grows, we will help passionate contributors specify the types of work they are most interested in doing, including:
+ 
+ - Coding
+ - Graphic design
+ - Writing
+ - Event planning
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+We will then build more robust connections based on interest and skill sets. We will also work with participating projects like yours to improve onboarding processes and materials, making it easier for anyone coming to your project to understand the goals of your work, and how to get involved!
 
-```markdown
-Syntax highlighted code block
+## Join Contributor.Link!
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RedHatOfficial/contributor.link.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+If your project is looking for contributors of any kind, fill out this form if you would like to participate in Contributor.Link!
