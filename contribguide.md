@@ -57,11 +57,11 @@ One of the biggest mistakes new contributors can make when they try to work in o
 
 Like any other new endeavor, it's important to approach contributing to a project with deliberation and care. The most important thing a new-to-a-project contributor should do is learn. Read documentation, watch online conversations, listen in online meetings. Absorb the community in which you are about to insert yourself. Once you're ready, follow these guidelines when you make your first contribution.
 
-- *Find a problem to solve.* It should not be a major problem, as any new contributions to a project should be small. But it should be based on an actual error or missing element, rather than just changing something just because you don't like it.
-- *Understand the goals of the project.* For minor changes, this should not be a big concern, but still, there may be a broader reason why something is the way it is, and you should make sure your contribution does not go against that reasoning.
-- *Prepare for the fact not every change will be accepted.* Everyone makes mistakes, and not every change will be deemed worthy. Don't take it personally, and be willing to learn.
-- *Keep learning.* This is a recurring theme in healthy open source communities. Be willing to listen to feedback and improve your contributions and skills.
-- *Don't overcommit.* Don't let your excitement about participation lead to you breaking promises.
+- **Find a problem to solve.** It should not be a major problem, as any new contributions to a project should be small. But it should be based on an actual error or missing element, rather than just changing something just because you don't like it.
+- **Understand the goals of the project.** For minor changes, this should not be a big concern, but still, there may be a broader reason why something is the way it is, and you should make sure your contribution does not go against that reasoning.
+- **Prepare for the fact not every change will be accepted.** Everyone makes mistakes, and not every change will be deemed worthy. Don't take it personally, and be willing to learn.
+- **Keep learning.** This is a recurring theme in healthy open source communities. Be willing to listen to feedback and improve your contributions and skills.
+- **Don't overcommit.** Don't let your excitement about participation lead to you breaking promises.
 
 ## Wrapping up
 
