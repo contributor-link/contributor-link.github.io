@@ -20,6 +20,17 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
+	  
+      {% if site.data.navigation %}
+
+        <div class="wrapper">
+          <div class="nav-wrap">
+            {% include nav.html role="navigation" %}
+          </div>
+        </div>
+	
+      {% endif %}
+	  
     <header class="page-header" role="banner">
 
       {% if site.logo %}
@@ -31,15 +42,7 @@
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
     </header>
 
-      {% if site.data.navigation %}
 
-        <div class="wrapper">
-          <div class="nav-wrap">
-            {% include nav.html role="navigation" %}
-          </div>
-        </div>
-	
-      {% endif %}
 
     <main id="content" class="main-content" role="main">
       {{ content }}
