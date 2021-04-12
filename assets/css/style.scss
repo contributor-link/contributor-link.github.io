@@ -26,6 +26,8 @@ $nav-text-color: #aaaaaa;
 $nav-active-color: #ffffff;
 $nav-hover-color: lighten($nav-text-color, 50%);
 
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700;900&family=Red+Hat+Display:wght@600&display=swap');
+
 @import "{{ site.theme }}";
 
 #logo {
@@ -36,6 +38,22 @@ $nav-hover-color: lighten($nav-text-color, 50%);
   #logo {
     max-width: 100%;
   }
+}
+
+body {
+    background: #221427;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Red Hat Display';
+   text-shadow: 0 0 13px #eb1704;
+
 }
 
 header.page-header {
