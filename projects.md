@@ -19,6 +19,16 @@ Elün proposes the use of photos taken by visitors of Protected Areas, plus info
 __Needed:__ AI developers, marketing specialists, graphic designers <br>
 [Connect!](https://ingenieria.udd.cl/centroid/laboratorios-de-investigacion/extreme-environmental-lab/#!/modal/272/elun-sistema-colaborativo-de-monitoreo-para-areas-protegidas-de-chile)
 
+## Fedora
+Fedora Design Team, the Fedora Project's in-house creative agency covering everything from logos and branding, to icons, to print media and swag design, to UX design a usability testing and assessment.<br>
+__Needed:__ Graphic designers<br>
+[Connect!](https://pagure.io/design)
+
+## Gluster
+Gluster is a scalable, distributed file system that aggregates disk storage resources from multiple servers into a single global namespace.<br>
+__Needed:__ Linux system programmers<br>
+[Connect!](https://www.gluster.org/community/)
+
 ## Project Thoth
 Using Artificial Intelligence to analyse and recommend Software Stacks for Artificial Intelligence applications.<br>
 __Needed:__ Python developers, machine learning developers, cloud native devops<br>
