@@ -65,15 +65,17 @@ __Needed:__ Quarkus developers, Web developers<br>
 [Connect!](https://qiot-project.github.io/)
 
 ## The Qubinode
-Our project aims to make it easy for anyone to set up an OpenShift cluster. Red Hat has a ton of solutions for OpenShift in the cloud, but on-prem requires expensive hardware, proprietary software licensing, subscriptions, some consulting time and expertise to set things up given the complexity of the technology. This creates a barrier to entry for most people who are curious and/or wanting to explore at home or in the lab. To solve this problem, we developed the Qubinode. It is an easy to set up development kit powered by Red Hat products.<br>
+Our project aims to make it easy for anyone to set up an OpenShift cluster. Red Hat has a ton of solutions for OpenShift in the cloud, but on-prem requires expensive hardware, proprietary software licensing, subscriptions, some consulting time and expertise to set things up given the complexity of the technology. This creates a barrier to entry for most people who are curious and/or wanting to explore at home or in the lab. To solve this problem, we developed the Qubinode. It is an easy to set up development kit powered by Red Hat products.
+
 Using the Qubinode installer, the kit allows you to install OpenShift, IDM, Tower and Satellite on Red Hat Enterprise Linux Libvirt. 
-Developed by Red Hatters -The Qubinode help developers and architects within our ISV, SI, customer and partner channels, accelerate enablement and learning of our products.<br>
+Developed by Red Hatters -The Qubinode help developers and architects within our ISV, SI, customer and partner channels, accelerate enablement and learning of our products.
+
 The Qubinode is optimized for demos and labs, is portable and can be carried with you on the go.  It can be shipped directly to a customer to remotely support a workshop.<br>
-__Needed:__ We need help setting up a testing infrastructure. A CI/CD pipeline is needed where we can consistently run the qubinode-installer to deploy the supported products.<br>
+__Needed:__ Setting up a testing infrastructure. Creating a CI/CD pipeline, where we can consistently run the qubinode-installer to deploy the supported products.<br>
 [Connect!](https://www.qubinode.io/)
 
 ## TaskODrill
-Yet another task management application.<br>
+The task management application you will love. Know what to do. Don't be afraid of forgetting something. Achieve peace of mind.<br>
 __Needed:__ Mobile apps developers (Android and iOS), UI/UX, designers, and functionality developers.<br>
 [Connect!](https://github.com/fcano/taskodrill)
 
