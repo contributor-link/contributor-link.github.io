@@ -40,6 +40,10 @@ $nav-hover-color: lighten($nav-text-color, 50%);
   }
 }
 
+masthead {
+background-image: url(’{{ site.baseurl }}/assets/images/contributor-link-header.png’);
+}
+
 body {
     background: #ffffff;
     font-family: 'Red Hat Text', sans-serif;
