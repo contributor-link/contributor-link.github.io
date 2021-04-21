@@ -40,10 +40,6 @@ $nav-hover-color: lighten($nav-text-color, 50%);
   }
 }
 
-masthead {
-background-image: url(’{{ site.baseurl }}/assets/images/contributor-link-header.png’);
-}
-
 body {
     background: #ffffff;
     font-family: 'Red Hat Text', sans-serif;
@@ -60,7 +56,7 @@ h6 {
 
 header.page-header {
     padding-bottom: 0;
-    background: linear-gradient(0deg, $header-bg-color, $header-bg-color-secondary, $header-bg-color);
+    background-image: url('{{ site.baseurl }}/assets/images/contributor-link-header.png');
 }
 
 h2.project-tagline {
