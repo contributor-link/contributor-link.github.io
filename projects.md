@@ -9,10 +9,20 @@ Arbor is a free and open chat system structured to provide clear, high-context c
 __Needed:__ Golang software developers, UX designer, technical writers<br>
 [Connect!](https://arbor.chat)
 
+## Cboard
+Cboard is an Augmentative and Alternative Communication (AAC) web app for children and adults with speech and language impairments, aiding communication with symbols and text-to-speech. This versatile application has been designed with the support of UNICEF and provides a unique voice for those who wish to communicate using the application’s language platform.<br>
+__Needed:__ Marketing/social media content creators, code contributors, proofreaders<br>
+[Connect!](https://github.com/cboard-org/cboard)
+
 ## ChRIS
 ChRIS is a general-purpose, open source distributed data and computation platform primarily aimed at improving medical research.<br>
 __Needed:__ Front end developers, openstack/openshift devops, docs, UX<br>
 [Connect!](http://chrisproject.org)
+
+## Eclipse Che
+Cloud IDE manager for development teams.<br>
+__Needed:__ Documentation writers, testers, code contributors<br>
+[Connect!](https://github.com/eclipse/che/blob/master/CONTRIBUTING.md)
 
 ## Elün
 Elün proposes the use of photos taken by visitors of Protected Areas, plus information provided by their cell phone sensors, to create a monitoring system. Which will be aimed at research and subsequent decision-making for the conservation of biodiversity in these places. The concept of participation is called «Citizen Science». The project includes the creation of a system that processes the images obtained through image recognition. It proposes an interface (web) that organizes the information temporally and geographically for the dissemination and analysis of experts and enthusiasts. <br>
@@ -35,16 +45,7 @@ __Needed:__ Python developers, machine learning developers, cloud native devops<
 [Connect!](https://github.com/thoth-station)
 
 ## qAIRaMap Open Source
-qAIRaMap Open Source is a project developed with the mentorship of UNICEF that is based in two repositories:
-- qAIRaMapAPI-OpenSource (REST API).
-- qAIRaMap-OpenSource (Web Application).
-
- It's a real-time website for monitoring air quality and it consists of the following features:
-- Real-time data from qHAWAX modules and Andean drones. 
-- Download of historic data.
-- Visualization of results in Google Maps.
-
-The data available: modules and drone in Madre de Dios (UNICEF project) and any other data from people using qairamap open source that have either a qHAWAX or Andean Drone<br>
+qAIRaMap Open Source is a project developed with the mentorship of UNICEF that is based in two repositories. It's a real-time website for monitoring air quality and it consists of the following features: Real-time data from qHAWAX modules and Andean drones; downloading of historic data; and visualization of results in Google Maps.<br>
 __Needed:__ 
 - Restructure layouts to improve the project’s usability.
 - Conduct user research to reorganize and refine the project’s navigation or menus.
@@ -65,12 +66,7 @@ __Needed:__ Quarkus developers, Web developers<br>
 [Connect!](https://qiot-project.github.io/)
 
 ## The Qubinode
-Our project aims to make it easy for anyone to set up an OpenShift cluster. Red Hat has a ton of solutions for OpenShift in the cloud, but on-prem requires expensive hardware, proprietary software licensing, subscriptions, some consulting time and expertise to set things up given the complexity of the technology. This creates a barrier to entry for most people who are curious and/or wanting to explore at home or in the lab. To solve this problem, we developed the Qubinode. It is an easy to set up development kit powered by Red Hat products.
-
-Using the Qubinode installer, the kit allows you to install OpenShift, IDM, Tower and Satellite on Red Hat Enterprise Linux Libvirt. 
-Developed by Red Hatters -The Qubinode help developers and architects within our ISV, SI, customer and partner channels, accelerate enablement and learning of our products.
-
-The Qubinode is optimized for demos and labs, is portable and can be carried with you on the go.  It can be shipped directly to a customer to remotely support a workshop.<br>
+Our project aims to make it easy for anyone to set up an OpenShift cluster. Red Hat has a ton of solutions for OpenShift in the cloud, but on-prem requires expensive hardware, proprietary software licensing, subscriptions, some consulting time and expertise to set things up given the complexity of the technology. This creates a barrier to entry for most people who are curious and/or wanting to explore at home or in the lab. To solve this problem, we developed the Qubinode. It is an easy to set up development kit powered by Red Hat products.<br>
 __Needed:__ Setting up a testing infrastructure. Creating a CI/CD pipeline, where we can consistently run the qubinode-installer to deploy the supported products.<br>
 [Connect!](https://www.qubinode.io/)
 
