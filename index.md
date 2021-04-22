@@ -19,4 +19,4 @@ We will then build more robust connections based on interest and skill sets. We 
 
 ## Join Contributor.Link!
 
-If your project is looking for contributors of any kind, fill out this form if you would like to participate in Contributor.Link!
+If your project is looking for contributors of any kind, [fill out this form](https://forms.gle/ccZbgwe2owLKX5FN8) if you would like to participate in Contributor.Link!
