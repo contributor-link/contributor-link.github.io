@@ -64,6 +64,14 @@ h2.project-tagline {
     padding: 1em;
 }
 
+a {
+  color: rgba(76, 139, 140, 1);
+}
+
+a:hover {
+  text-decoration-color: rgba(76, 139, 140, 0.5);
+}
+
 // link colors
 $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
