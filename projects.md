@@ -39,6 +39,11 @@ Gluster is a scalable, distributed file system that aggregates disk storage reso
 __Needed:__ Linux system programmers<br>
 [Connect!](https://www.gluster.org/community/)
 
+## LibreOffice
+Free and open source office suite – successor to OpenOffice(.org).<br>
+__Needed:__ Developers, designers, testers, translators, doucumentation writers, and help with marketing and infrastructure<br>
+[Connect!](https://www.libreoffice.org/community/get-involved/)
+
 ## Project Thoth
 Using Artificial Intelligence to analyse and recommend Software Stacks for Artificial Intelligence applications.<br>
 __Needed:__ Python developers, machine learning developers, cloud native devops<br>
