@@ -9,6 +9,11 @@ Arbor is a free and open chat system structured to provide clear, high-context c
 __Needed:__ Golang software developers, UX designer, technical writers<br>
 [Connect!](https://arbor.chat)
 
+## Augur
+We are an open source software health and sustainability project, affiliated with the [CHAOSS Project](https://chaoss.community).<br>
+__Needed:__ Testing, documentation, deployment, marketing, software engineering (debugging), front end design<br>
+[Connect!](https://augurlabs.io)
+
 ## Cboard
 Cboard is an Augmentative and Alternative Communication (AAC) web app for children and adults with speech and language impairments, aiding communication with symbols and text-to-speech. This versatile application has been designed with the support of UNICEF and provides a unique voice for those who wish to communicate using the application’s language platform.<br>
 __Needed:__ Marketing/social media content creators, code contributors, proofreaders<br>
@@ -44,6 +49,11 @@ Free and open source office suite – successor to OpenOffice(.org).<br>
 __Needed:__ Developers, designers, testers, translators, doucumentation writers, and help with marketing and infrastructure<br>
 [Connect!](https://www.libreoffice.org/community/get-involved/)
 
+## Meshery
+Meshery is the open source, service mesh management plane for enabling the adoption, operation, and management of any service mesh and their workloads.<br>
+__Needed:__ Community managers and ambassadors, documentation using video and other media, user ambassadors (designing new user guides and example flows for how to use the project), bloggers, technical writers<br>
+[Connect!](https://layer5.io/community/newcomers)
+
 ## Project Thoth
 Using Artificial Intelligence to analyse and recommend Software Stacks for Artificial Intelligence applications.<br>
 __Needed:__ Python developers, machine learning developers, cloud native devops<br>
@@ -75,9 +85,14 @@ Our project aims to make it easy for anyone to set up an OpenShift cluster. Red 
 __Needed:__ Setting up a testing infrastructure. Creating a CI/CD pipeline, where we can consistently run the qubinode-installer to deploy the supported products.<br>
 [Connect!](https://www.qubinode.io/)
 
+## Stopgo
+Stop-motion animation application for kids.<br>
+__Needed:__ Java coders, UI code (not UX, we have a non-coder who works with school children with very specific ideas of how the application should function)<br>
+[Connect!](https://gitlab.com/makerbox/stopgo2)
+
 ## TaskODrill
 The task management application you will love. Know what to do. Don't be afraid of forgetting something. Achieve peace of mind.<br>
-__Needed:__ Mobile apps developers (Android and iOS), UI/UX, designers, and functionality developers.<br>
+__Needed:__ Mobile apps developers (Android and iOS), UI/UX, designers, and functionality developers<br>
 [Connect!](https://github.com/fcano/taskodrill)
 
 
