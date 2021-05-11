@@ -95,4 +95,7 @@ The task management application you will love. Know what to do. Don't be afraid 
 __Needed:__ Mobile apps developers (Android and iOS), UI/UX, designers, and functionality developers<br>
 [Connect!](https://github.com/fcano/taskodrill)
 
-
+## VRapeutic
+We are a UNICEF Innovation Fund portfolio software house specializing in developing rehabilitation and therapeutic solutions, with a focus on learning and developmental challenges.<br>
+__Needed:__ Copywriters, graphic designers, web designers, web developers, concept artists, game designers, marketing specialists, medical sales specialists, digital marketing professionals, UI/UX specialists, explainer video designers and editors<br>
+[Connect!](https://www.facebook.com/myvrapeutic/)
