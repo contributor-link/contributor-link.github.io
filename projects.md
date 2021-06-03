@@ -35,9 +35,9 @@ __Needed:__ AI developers, marketing specialists, graphic designers <br>
 [Connect!](https://ingenieria.udd.cl/centroid/laboratorios-de-investigacion/extreme-environmental-lab/#!/modal/272/elun-sistema-colaborativo-de-monitoreo-para-areas-protegidas-de-chile)
 
 ## Fedora
-Fedora Design Team, the Fedora Project's in-house creative agency covering everything from logos and branding, to icons, to print media and swag design, to UX design a usability testing and assessment.<br>
-__Needed:__ Graphic designers<br>
-[Connect!](https://pagure.io/design)
+The Fedora Join Special Interest Group (SIG) aims to set up and maintain channels that let prospective contributors engage with the community. The Fedora Join SIG enables people looking to join the Fedora community to converse with existing members, make friends, find mentors, and get a feeling of what and how the community does in general. The Join group also helps connect folks with first tasks for contribution.<br>
+__Needed:__ Many contributors<br>
+[Connect!](https://web.libera.chat/#fedora-join.)
 
 ## Gluster
 Gluster is a scalable, distributed file system that aggregates disk storage resources from multiple servers into a single global namespace.<br>
