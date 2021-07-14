@@ -43,7 +43,7 @@ There are myriad ways legal skills can be useful to a project, such as to the pr
 
 If you are interested in people/human resource skills, some of the project areas that can use your expertise are leadership, the community team, and any newcomer initiatives. Projects have a unique set of recruiting and retention issues that benefit from a wide variety of backgrounds. More and more projects are using codes of conduct for participants and contributors, which can benefit from an entire range of personnel management skills and experience.
 
-###Finding a project
+### Finding a project
 
 If you are passionate about any hobby or cause in your life, you may not need to overthink what exactly your first contribution will be. There may already be a project that is closely related to an existing interest. Do you sew clothing? Projects exist that build open source patterns or feed inputs into sewing hardware. Passionate about flight? Investigate some of the many open source drone projects.
 
