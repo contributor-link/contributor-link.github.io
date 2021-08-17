@@ -46,7 +46,7 @@ __Needed:__ Linux system programmers<br>
 
 ## LibreOffice
 Free and open source office suite – successor to OpenOffice(.org).<br>
-__Needed:__ Developers, designers, testers, translators, doucumentation writers, and help with marketing and infrastructure<br>
+__Needed:__ Developers, designers, testers, translators, documentation writers, and help with marketing and infrastructure<br>
 [Connect!](https://www.libreoffice.org/community/get-involved/)
 
 ## Meshery
