@@ -21,13 +21,19 @@
     <meta name="theme-color" content="#25222c">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="/assets/css/style.css?v=f9e910116211bafeae6c1b234cadc3f6a918c9a9">
+
+    <!-- Studio Web -->
+        <link rel="stylesheet" href="//www.redhat.com/ux/webdms/css/styles.min.css">
+
+    <!-- Libraries -->
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   </head>
   <body>
 	  
       
 
-        <div class="wrapper">
-          <div class="nav-wrap">
+  <!-- <div class="wrapper">
+    <div class="nav-wrap">
             
 
 
@@ -83,18 +89,52 @@
 
 
           </div>
-        </div>
+        </div> -->
 	
       
 	  
-    <header class="page-header" role="banner">
+ <header id="top" class="dms-band contributor-link-nav-top py-1 bg-black sticky">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6 pl-4">
+                <a href="/" title="Red Hat Design logo">
+                    <img class="img-fluid" src="/assets/images/contributor-link_logo-light-stacked.svg" width="146" height="46" alt="Contributor link logo">
+                </a>
+            </div>
 
-      
-        <img id="logo" src="/assets/images/contributor-link-logos_horizontal_light.svg">
-      
- 
-      <h2 class="project-tagline"></h2>
-    </header>
+            <div class="col-6 d-none d-md-block text-right">
+                <a href="/about" title="About" class="text-white">About</a>
+                <a href="/projects" title="Projects" class="text-white px-4">Projects</a>
+                <a href="/resources" title="Resources" class="text-white">Resources</a>
+            </div>
+
+            <div class="col-6 contributor-nav-toggle-wrapper d-md-none text-right">
+                <a href="#" class="btn-toggle p-1" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
+
+                        <span class="menu-bar"></span>
+
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dms-band contributor-link-nav-shelf text-white py-0">
+    <div class="nav-container pb-4">
+        <div id="ContributorNav" class="accordion">
+          <ul>
+            <li><a href="/about" title="About" class="text-white">About</a></li>
+            <li><a href="/projects" title="Projects" class="text-white px-4">Projects</a></li>
+            <li><a href="/resources" title="Resources" class="text-white">Resources</a></li>
+          </ul>
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -208,5 +248,20 @@
 
 
     </main>
+
+<!-- SCRIPTS start -->
+
+  <!-- Vendors -->
+  <!-- <script src="@@vendor_js"></script> -->
+  <script src="//www.redhat.com/ux/webdms/js/vendors/jquery.waypoints.min.js"></script>
+
+  <!-- Studio Web -->
+  <script src="//www.redhat.com/ux/webdms/js/scripts.min.js"></script>
+
+  <!-- Project -->
+  <!-- <script src="/assets/js/project.json"></script> -->
+  <script src="/assets/js/contributor-link.js"></script>
+
+<!-- SCRIPTS end -->
   </body>
 </html>
