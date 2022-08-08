@@ -20,7 +20,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#25222c">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=f9e910116211bafeae6c1b234cadc3f6a918c9a9">
+    <link rel="stylesheet" href="/assets/css/style.css?v=99e80bc5e3c47000ca4f809dba857fa9458829d1">
+
+      <!-- Studio Web -->
+        <link rel="stylesheet" href="//www.redhat.com/ux/webdms/css/styles.min.css">
+
+    <!-- Libraries -->
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   </head>
   <body>
 	  
@@ -30,53 +36,49 @@
           <div class="nav-wrap">
             
 
+<header id="top" class="dms-band contributor-link-nav-top py-1 bg-black sticky">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6 pl-4">
+                <a href="/" title="Red Hat Design logo">
+                    <img class="img-fluid" src="/assets/images/contributor-link_logo-light-stacked.svg" width="146" height="46" alt="Contributor link logo">
+                </a>
+            </div>
 
-  <input type="checkbox" id="nav-toggle" class="nav-check" hidden="hidden">
-  <nav role="navigation" class="">
-  <label for="nav-toggle" class="nav-toggle" title="Menu"></label>
-  <label for="nav-toggle" class="nav-screen"></label>
+            <div class="col-6 d-none d-md-block text-right">
+                <a href="/about" title="About" class="text-white">About</a>
+                <a href="/projects" title="Projects" class="text-white px-4">Projects</a>
+                <a href="/resources" title="Resources" class="text-white">Resources</a>
+            </div>
 
+            <div class="col-6 contributor-link-nav-toggle-wrapper d-md-none text-right">
+                <a href="#" class="btn-toggle p-1" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
 
-  <ul class="nav-menu" role="menubar">
-    
-      
+                        <span class="menu-bar"></span>
 
-      <li class="nav--home" role="menuitem">
-        
-          <a href="/"><span class="label">Home</span></a>
-        
-        
-      </li>
-    
-      
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
-      <li class="nav--about" role="menuitem">
-        
-          <a href="/about"><span class="label">About</span></a>
-        
-        
-      </li>
-    
-      
+</header>
 
-      <li class="nav--projects" role="menuitem">
-        
-          <a href="/projects"><span class="label">Projects</span></a>
-        
-        
-      </li>
-    
-      
+<div class="dms-band contributor-link-nav-shelf text-white py-0" >
+    <div class="nav-container px-4">
+        <div id="ContributorNav" class="accordion">
+          <ul class="list-unstyled">
+            <li class="pt-2"><a href="/about" title="About" class="text-white">About</a></li>
+            <li class="py-2"><a href="/projects" title="Projects" class="text-white">Projects</a></li>
+            <li><a href="/resources" title="Resources" class="text-white">Resources</a></li>
+          </ul>
+        </div>
+    </div>
+</div>
 
-      <li class="nav--resources" role="menuitem">
-        
-          <a href="/resources"><span class="label">Resources</span></a>
-        
-        
-      </li>
-    
-
-  </ul>
 
 
   </nav>
@@ -87,35 +89,75 @@
 	
       
 	  
-    <header class="page-header" role="banner">
+    <header role="banner">
 
-      
-        <img id="logo" src="/assets/images/contributor-link-logos_horizontal_light.svg">
-      
- 
-      <h2 class="project-tagline"></h2>
+      <section class="dms-band bg-gray-100 pt-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                  <h1 class="pt-md-6">Building stronger communities</h1>
+                    <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et </p>
+                </div>
+                <div class="col-md-7">
+                    <p class="pt-2 pt-md-6 pt-lg-0 text-md-right"><img class="img-fluid" src="/assets/images/cl-resources_hero.png" alt="resources graphic"></p>
+                </div>
+            </div>
+        </div>
+    </section>
     </header>
 
 
 
-    <main id="content" class="main-content" role="main">
-      <p>Contributor.Link is about more than just connecting contributors to projects. We are also here to provide support for new contributors, so they can learn the best ways to join and contribute to a project. At the same time, we will work with participating projects to ensure their community is as welcoming to all contributors as possible!</p>
+    <main id="content" role="main">
+      <section class="dms-band">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xl-6 mx-auto">
+                    <p>Contributor.Link is about more than just connecting contributors to projects. We are also here to provide support for new contributors, so they can learn the best ways to join and contribute to a project. At the same time, we will work with participating projects to ensure their community is as welcoming to all contributors as possible!</p>
+                    <p>The resources to accomplish this can be found on this page, which will grow as Contributor.Link does!</p>
+                    <h2>Contributor guidlines</h2>  
+                    <p>Looking for a project? Or you’ve found a project that you really like and aren’t sure how to begin? Our <a href="/contribguide" title="contributor guidelines">contributor guidelines</a> will walk you through the process of getting your started in open source quickly and seamlessly!</p>
+                    <h2>Community guidelines.</h2>
+                    <p>If your project is actively seeking new contributors, there are some easy paths to take to ensure your <a href="/communityguide" title="community onboarding process">community onboarding process</a> is simple and clear.</p>
+                </div>
+                
+            </div>
+            
+        </div>
 
-<p>The resources to accomplish this can be found on this page, which will grow as Contributor.Link does!</p>
+    </section>
 
-<ul>
-  <li><strong>Contributor guidelines.</strong> Looking for a project? Or you’ve found a project that you really like and aren’t sure how to begin? Our <a href="/contribguide">contributor guidelines</a> will walk you through the process of getting your started in open source quickly and seamlessly!</li>
-  <li><strong>Community guidelines.</strong> If your project is actively seeking new contributors, there are some easy paths to take to ensure your <a href="/communityguide">community onboarding process</a> is simple and clear.</li>
-</ul>
+      
 
+    </main>
+    <footer class="dms-band site-footer bg-black py-2 mt-0">
+	<div class="container text-white">
+	  	<div class="row d-flex ">
+	  		<div class="col-8 mx-auto">
+		  		<h3 class="text-center">Supported by
+		    	<a href="http://www.redhat.com"><img  src="https://www.redhat.com/cms/managed-files/logo-RedHat_white.svg" alt="Red Hat" class="img-fluid" w="200"></a></h3>
+		    </div>
+	    </div>
+	</div>
 
-      <footer class="site-footer">
-  <p>
-    <a href="http://www.redhat.com"><img id="sponsorship" src="/assets/images/sponsoredredhat.png" style="vertical-align:middle"></a>.
+    <!-- SCRIPTS start -->
+
+  <!-- Vendors -->
+  <!-- <script src="@@vendor_js"></script> -->
+  <script src="//www.redhat.com/ux/webdms/js/vendors/jquery.waypoints.min.js"></script>
+
+  <!-- Red Hat -->
+  <script src="//www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.webcomponents.js"></script>
+
+  <!-- Studio Web -->
+  <script src="//www.redhat.com/ux/webdms/js/scripts.min.js"></script>
+
+  <!-- Project -->
+  <script src="/assets/js/contributor-link.js"></script>
+
+<!-- SCRIPTS end -->
     
 </footer>
 
-
-    </main>
   </body>
 </html>

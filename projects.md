@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: projects
 ---
 
 The project within Contributor.Link all offer unique opportunities to make the world a better place! We are pleased to be working with these fantastic communities!

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#25222c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+      <!-- Studio Web -->
+    <link rel="stylesheet" href="//www.redhat.com/ux/webdms/css/styles.min.css">
+
+    <!-- Libraries -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  </head>
+  <body>
+	  
+      {% if site.data.navigation %}
+
+        <div class="wrapper">
+          <div class="nav-wrap">
+            {% include nav.html role="navigation" %}
+          </div>
+        </div>
+	
+      {% endif %}
+	  
+    <header role="banner">
+
+      <section class="dms-band py-0 bg-contain bg-pos-rc bg-no-repeat" data-bg-image="/assets/images/cl-background-hero_light-gray.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-5 mt-12">
+                  <h1 class="pt-md-6 pt-lg-10">Building stronger communities</h1>
+                    <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et </p>
+                </div>
+                <div class="col-md-6 offset-lg-1">
+                    <p class="mt-4 mt-md-12 mb-0 text-center text-md-right"><img class="img-fluid mb-n4" src="/assets/images/about-hero.png" alt="computer collaboration"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </header>
+
+
+
+    <main id="content" role="main">
+      <section class="dms-band pt-12 pt-md-6 pt-lg-12 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xl-6 mx-auto">
+                    <p>When members of Red Hat’s Open Source Program Office and Open Studio teams came together to seek new initiatives around Red Hat’s Code is Open campaign, it soon became clear that building on the work of the original OpenHatch project would be such an initiative. After learning more about the origins and mission of OpenHatch from some of the original project maintainers, the inspiration of OpenHatch’s incredible work lifted us to create Contributor.Link.</p>
+                    <h2>Building stronger communities</h2>
+                    <p>Contributor.Link, like OpenHatch, will create connections between developers and projects, but it won’t stop there. All contributors, no matter their field, can be linked to recipient projects. Open source projects are not about only coding anymore, and the most successful and healthy communities use many talents and skills to thrive and grow. Like OpenHatch, Contributor.Link will focus on bringing more diverse contributors to participating projects and encouraging those projects to create processes that will make it easier and more welcoming for all contributors to get started.</p>
+                    <p>We will then build more robust connections based on interest and skill sets. We will also work with participating projects like yours to improve onboarding processes and materials, making it easier for anyone coming to your project to understand the goals of your work, and how to get involved!</p>
+                    <p>We’re looking forward to meeting new community members and forging the links to build stronger communities.</p>
+                </div>
+                
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <p class="font-size-12 pt-6">“Computer Collaboration” by laurenandhaste</p>
+              </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+      
+
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

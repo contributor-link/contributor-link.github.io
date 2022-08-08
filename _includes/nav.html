@@ -1,81 +1,48 @@
 {% assign navs = include.nav | default: site.data.navigation %}
 
-{% unless include.wrap == false %}
-  <input type="checkbox" id="nav-toggle" class="nav-check" hidden="hidden">
-  <nav role="{{ include.role }}" class="{{ include.class }}">
-  <label for="nav-toggle" class="nav-toggle" title="Menu"></label>
-  <label for="nav-toggle" class="nav-screen"></label>
-{% endunless %}
+<header id="top" class="dms-band contributor-link-nav-top py-1 bg-black sticky">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6 pl-4">
+                <a href="/" title="Red Hat Design logo">
+                    <img class="img-fluid" src="/assets/images/contributor-link_logo-light-stacked.svg" width="146" height="46" alt="Contributor link logo">
+                </a>
+            </div>
 
-  <ul class="nav-menu" role="menubar">
-    {% for nav in navs %}
-      {% capture vars %}
-        {% if nav.url == page.url | replace: ".html", "/" %}
-          {% assign active = " active" %}
-        {% elsif nav.url == page.url | remove: ".html" %}
-          {% assign active = " active" %}
-        {% else %}
-          {% assign active = "" %}
-        {% endif %}
+            <div class="col-6 d-none d-md-block text-right">
+                <a href="/about" title="About" class="text-white">About</a>
+                <a href="/projects" title="Projects" class="text-white px-4">Projects</a>
+                <a href="/resources" title="Resources" class="text-white">Resources</a>
+            </div>
 
-        {% assign protocol = nav.url | split: ':' | first | downcase %}
-        {% if protocol == 'https' %}
-          {% assign baseurl = '' %}
-        {% elsif protocol == 'http' %}
-          {% assign baseurl = '' %}
-        {% elsif protocol == 'ftps' %}
-          {% assign baseurl = '' %}
-        {% elsif protocol == 'ftp' %}
-          {% assign baseurl = '' %}
-        {% elsif protocol == 'mailto' %}
-          {% assign baseurl = '' %}
-        {% else %}
-          {% assign baseurl = site.baseurl %}
-        {% endif %}
+            <div class="col-6 contributor-link-nav-toggle-wrapper d-md-none text-right">
+                <a href="#" class="btn-toggle p-1" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
 
-        {% if nav.nav %}
-          {% assign navgroup = " nav-group" %}
-        {% else %}
-          {% assign navgroup = "" %}
-        {% endif %}
+                        <span class="menu-bar"></span>
 
-        {% if nav.icon-only == true %}
-          {% assign nav_label = '' %}
-          {% assign nav_title = nav.title | prepend: ' title="' | append: '"' %}
-          {% assign nav_alt = nav.title %}
-        {% else%}
-          {% assign nav_label = nav.title | prepend: '<span class="label">' | append: '</span>' %}
-          {% assign nav_title = '' %}
-          {% assign nav_alt = '' %}
-        {% endif %}
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
-        {% if nav.icon %}
-          {% assign nav_class = nav.class | append: " nav-icon" %}
-            {% capture nav_icon %}
-              <img src="{{ site.baseurl }}/images/{{ nav.icon }}.svg" alt="{{ nav_alt }}"{{ nav_title }}>
-            {% endcapture %}
-        {% else %}
-          {% assign nav_class = nav.class %}
-        {% endif %}
-      {% endcapture %}{% assign vars = nil %}
+</header>
 
-      <li class="nav--{{ nav.title | slugify | default: "home" }}{{ nav_class }}{{ navgroup }}{{ active }}" role="menuitem">
-        {% if nav.url %}
-          <a href="{{ nav.url | prepend: baseurl }}">{{
-            nav_icon | strip
-            }}{{
-            nav_label | strip
-            }}</a>
-        {% else %}
-          <span class="not-a-link">{{ nav.title }}</span>
-        {% endif %}
-        {% if nav.nav %}
-          {% include nav.html nav=nav.nav wrap=false %}
-        {% endif %}
-      </li>
-    {% endfor %}
+<div class="dms-band contributor-link-nav-shelf text-white py-0" >
+    <div class="nav-container px-4">
+        <div id="ContributorNav" class="accordion">
+          <ul class="list-unstyled">
+            <li class="pt-2"><a href="/about" title="About" class="text-white">About</a></li>
+            <li class="py-2"><a href="/projects" title="Projects" class="text-white">Projects</a></li>
+            <li><a href="/resources" title="Resources" class="text-white">Resources</a></li>
+          </ul>
+        </div>
+    </div>
+</div>
 
-  </ul>
 
 {% unless include.wrap == false %}
   </nav>

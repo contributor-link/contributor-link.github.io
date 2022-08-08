@@ -20,7 +20,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#25222c">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=f9e910116211bafeae6c1b234cadc3f6a918c9a9">
+    <link rel="stylesheet" href="/assets/css/style.css?v=99e80bc5e3c47000ca4f809dba857fa9458829d1">
+
+      <!-- Studio Web -->
+        <link rel="stylesheet" href="//www.redhat.com/ux/webdms/css/styles.min.css">
+
+    <!-- Libraries -->
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   </head>
   <body>
 	  
@@ -30,53 +36,49 @@
           <div class="nav-wrap">
             
 
+<header id="top" class="dms-band contributor-link-nav-top py-1 bg-black sticky">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6 pl-4">
+                <a href="/" title="Red Hat Design logo">
+                    <img class="img-fluid" src="/assets/images/contributor-link_logo-light-stacked.svg" width="146" height="46" alt="Contributor link logo">
+                </a>
+            </div>
 
-  <input type="checkbox" id="nav-toggle" class="nav-check" hidden="hidden">
-  <nav role="navigation" class="">
-  <label for="nav-toggle" class="nav-toggle" title="Menu"></label>
-  <label for="nav-toggle" class="nav-screen"></label>
+            <div class="col-6 d-none d-md-block text-right">
+                <a href="/about" title="About" class="text-white">About</a>
+                <a href="/projects" title="Projects" class="text-white px-4">Projects</a>
+                <a href="/resources" title="Resources" class="text-white">Resources</a>
+            </div>
 
+            <div class="col-6 contributor-link-nav-toggle-wrapper d-md-none text-right">
+                <a href="#" class="btn-toggle p-1" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
 
-  <ul class="nav-menu" role="menubar">
-    
-      
+                        <span class="menu-bar"></span>
 
-      <li class="nav--home" role="menuitem">
-        
-          <a href="/"><span class="label">Home</span></a>
-        
-        
-      </li>
-    
-      
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
-      <li class="nav--about" role="menuitem">
-        
-          <a href="/about"><span class="label">About</span></a>
-        
-        
-      </li>
-    
-      
+</header>
 
-      <li class="nav--projects" role="menuitem">
-        
-          <a href="/projects"><span class="label">Projects</span></a>
-        
-        
-      </li>
-    
-      
+<div class="dms-band contributor-link-nav-shelf text-white py-0" >
+    <div class="nav-container px-4">
+        <div id="ContributorNav" class="accordion">
+          <ul class="list-unstyled">
+            <li class="pt-2"><a href="/about" title="About" class="text-white">About</a></li>
+            <li class="py-2"><a href="/projects" title="Projects" class="text-white">Projects</a></li>
+            <li><a href="/resources" title="Resources" class="text-white">Resources</a></li>
+          </ul>
+        </div>
+    </div>
+</div>
 
-      <li class="nav--resources" role="menuitem">
-        
-          <a href="/resources"><span class="label">Resources</span></a>
-        
-        
-      </li>
-    
-
-  </ul>
 
 
   </nav>
@@ -87,19 +89,29 @@
 	
       
 	  
-    <header class="page-header" role="banner">
+     <header role="banner">
 
-      
-        <img id="logo" src="/assets/images/contributor-link-logos_horizontal_light.svg">
-      
- 
-      <h2 class="project-tagline"></h2>
+      <section class="dms-band py-12 bg-contain bg-pos-cc bg-no-repeat" data-bg-image="/assets/images/contributor-background.jpg">
+        <div class="container">
+            <div class="row py-12">
+                <div class="col">
+                    <p class="text-center pt-6"><img class="img-fluid" src="/assets/images/logo_contributor-link.svg" width="706" alt="Contributor link logo"></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
     </header>
 
 
 
-    <main id="content" class="main-content" role="main">
-      <p>Since the term “open source” was first coined in 1998, software was indeed the only thing being described by this adjectival phrase for a long time—at least in the public domain.</p>
+
+    <main id="content" role="main">
+      <section class="dms-band">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <p>Since the term “open source” was first coined in 1998, software was indeed the only thing being described by this adjectival phrase for a long time—at least in the public domain.</p>
 
 <p>Gradually, the ideas of open source hardware, open source medicine, open source education, and a host of other shared creation models were being introduced to the world. The idea of many collaborating on a creation in ways that would surpass the work of one or the collaboration of a few was too appealing not to take root in other creative endeavors.</p>
 
@@ -172,14 +184,44 @@
 
 <p>Open source contributions are varied and opportunities are plentiful. Be patient in your exploration of projects to participate in, and you should find something fun and meaningful to which you can connect. Once you find such a project, listen, learn, and then learn some more as you begin the processes of contributing to that open source project.</p>
 
+                </div>
+                
+            </div>
+            
+        </div>
 
-      <footer class="site-footer">
-  <p>
-    <a href="http://www.redhat.com"><img id="sponsorship" src="/assets/images/sponsoredredhat.png" style="vertical-align:middle"></a>.
+    </section>
+      
+
+    </main>
+    <footer class="dms-band site-footer bg-black py-2 mt-0">
+	<div class="container text-white">
+	  	<div class="row d-flex ">
+	  		<div class="col-8 mx-auto">
+		  		<h3 class="text-center">Supported by
+		    	<a href="http://www.redhat.com"><img  src="https://www.redhat.com/cms/managed-files/logo-RedHat_white.svg" alt="Red Hat" class="img-fluid" w="200"></a></h3>
+		    </div>
+	    </div>
+	</div>
+
+    <!-- SCRIPTS start -->
+
+  <!-- Vendors -->
+  <!-- <script src="@@vendor_js"></script> -->
+  <script src="//www.redhat.com/ux/webdms/js/vendors/jquery.waypoints.min.js"></script>
+
+  <!-- Red Hat -->
+  <script src="//www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.webcomponents.js"></script>
+
+  <!-- Studio Web -->
+  <script src="//www.redhat.com/ux/webdms/js/scripts.min.js"></script>
+
+  <!-- Project -->
+  <script src="/assets/js/contributor-link.js"></script>
+
+<!-- SCRIPTS end -->
     
 </footer>
 
-
-    </main>
   </body>
 </html>

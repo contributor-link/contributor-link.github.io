@@ -1,3 +1,7 @@
+---
+layout: guides
+---
+
 Since the term "open source" was first coined in 1998, software was indeed the only thing being described by this adjectival phrase for a long time—at least in the public domain. 
 
 Gradually, the ideas of open source hardware, open source medicine, open source education, and a host of other shared creation models were being introduced to the world. The idea of many collaborating on a creation in ways that would surpass the work of one or the collaboration of a few was too appealing not to take root in other creative endeavors.

@@ -20,80 +20,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#25222c">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=f9e910116211bafeae6c1b234cadc3f6a918c9a9">
+    <!--<link rel="stylesheet" href="/assets/css/style.css?v=99e80bc5e3c47000ca4f809dba857fa9458829d1"> -->
 
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="//static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Red Hat -->
+    <link rel="stylesheet" href="//www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.webcomponents.min.css">
+    <link rel="stylesheet" href="//static.redhat.com/libs/redhat/redhat-theme/latest/advanced-theme.css">
     <!-- Studio Web -->
-        <link rel="stylesheet" href="//www.redhat.com/ux/webdms/css/styles.min.css">
+    <link rel="stylesheet" href="//www.redhat.com/ux/webdms/css/styles.min.css">
 
     <!-- Libraries -->
-        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   </head>
+
   <body>
 	  
       
 
-  <!-- <div class="wrapper">
-    <div class="nav-wrap">
-            
-
-
-  <input type="checkbox" id="nav-toggle" class="nav-check" hidden="hidden">
-  <nav role="navigation" class="">
-  <label for="nav-toggle" class="nav-toggle" title="Menu"></label>
-  <label for="nav-toggle" class="nav-screen"></label>
-
-
-  <ul class="nav-menu" role="menubar">
-    
-      
-
-      <li class="nav--home" role="menuitem">
         
-          <a href="/"><span class="label">Home</span></a>
-        
-        
-      </li>
-    
-      
 
-      <li class="nav--about" role="menuitem">
-        
-          <a href="/about"><span class="label">About</span></a>
-        
-        
-      </li>
-    
-      
-
-      <li class="nav--projects" role="menuitem">
-        
-          <a href="/projects"><span class="label">Projects</span></a>
-        
-        
-      </li>
-    
-      
-
-      <li class="nav--resources" role="menuitem">
-        
-          <a href="/resources"><span class="label">Resources</span></a>
-        
-        
-      </li>
-    
-
-  </ul>
-
-
-  </nav>
-
-
-          </div>
-        </div> -->
-	
-      
-	  
- <header id="top" class="dms-band contributor-link-nav-top py-1 bg-black sticky">
+<header id="top" class="dms-band contributor-link-nav-top py-1 bg-black sticky">
     <div class="container text-white">
         <div class="row d-flex align-items-center">
             <div class="col-6 pl-4">
@@ -108,7 +58,7 @@
                 <a href="/resources" title="Resources" class="text-white">Resources</a>
             </div>
 
-            <div class="col-6 contributor-nav-toggle-wrapper d-md-none text-right">
+            <div class="col-6 contributor-link-nav-toggle-wrapper d-md-none text-right">
                 <a href="#" class="btn-toggle p-1" data-toggle="nav-shelf">
                     <div class="d-inline-block">
                         <span class="menu-bar"></span>
@@ -121,14 +71,15 @@
             </div>
         </div>
     </div>
+
 </header>
 
-<div class="dms-band contributor-link-nav-shelf text-white py-0">
-    <div class="nav-container pb-4">
+<div class="dms-band contributor-link-nav-shelf text-white py-0" >
+    <div class="nav-container px-4">
         <div id="ContributorNav" class="accordion">
-          <ul>
-            <li><a href="/about" title="About" class="text-white">About</a></li>
-            <li><a href="/projects" title="Projects" class="text-white px-4">Projects</a></li>
+          <ul class="list-unstyled">
+            <li class="pt-2"><a href="/about" title="About" class="text-white">About</a></li>
+            <li class="py-2"><a href="/projects" title="Projects" class="text-white">Projects</a></li>
             <li><a href="/resources" title="Resources" class="text-white">Resources</a></li>
           </ul>
         </div>
@@ -137,131 +88,436 @@
 
 
 
-
-    <main id="content" class="main-content" role="main">
-      <p>The project within Contributor.Link all offer unique opportunities to make the world a better place! We are pleased to be working with these fantastic communities!</p>
-
-<h2 id="arbor-chat">Arbor Chat</h2>
-<p>Arbor is a free and open chat system structured to provide clear, high-context communication in a user-respecting way.<br />
-<strong>Needed:</strong> Golang software developers, UX designer, technical writers<br />
-<a href="https://arbor.chat">Connect!</a></p>
-
-<h2 id="augur">Augur</h2>
-<p>We are an open source software health and sustainability project, affiliated with the <a href="https://chaoss.community">CHAOSS Project</a>.<br />
-<strong>Needed:</strong> Testing, documentation, deployment, marketing, software engineering (debugging), front end design<br />
-<a href="https://augurlabs.io">Connect!</a></p>
-
-<h2 id="cboard">Cboard</h2>
-<p>Cboard is an Augmentative and Alternative Communication (AAC) web app for children and adults with speech and language impairments, aiding communication with symbols and text-to-speech. This versatile application has been designed with the support of UNICEF and provides a unique voice for those who wish to communicate using the application’s language platform.<br />
-<strong>Needed:</strong> Marketing/social media content creators, code contributors, proofreaders<br />
-<a href="https://github.com/cboard-org/cboard">Connect!</a></p>
-
-<h2 id="chris">ChRIS</h2>
-<p>ChRIS is a general-purpose, open source distributed data and computation platform primarily aimed at improving medical research.<br />
-<strong>Needed:</strong> Front end developers, openstack/openshift devops, docs, UX<br />
-<a href="http://chrisproject.org">Connect!</a></p>
-
-<h2 id="eclipse-che">Eclipse Che</h2>
-<p>Cloud IDE manager for development teams.<br />
-<strong>Needed:</strong> Documentation writers, testers, code contributors<br />
-<a href="https://github.com/eclipse/che/blob/master/CONTRIBUTING.md">Connect!</a></p>
-
-<h2 id="elün">Elün</h2>
-<p>Elün proposes the use of photos taken by visitors of Protected Areas, plus information provided by their cell phone sensors, to create a monitoring system. Which will be aimed at research and subsequent decision-making for the conservation of biodiversity in these places. The concept of participation is called «Citizen Science». The project includes the creation of a system that processes the images obtained through image recognition. It proposes an interface (web) that organizes the information temporally and geographically for the dissemination and analysis of experts and enthusiasts. <br />
-<strong>Needed:</strong> AI developers, marketing specialists, graphic designers <br />
-<a href="https://ingenieria.udd.cl/centroid/laboratorios-de-investigacion/extreme-environmental-lab/#!/modal/272/elun-sistema-colaborativo-de-monitoreo-para-areas-protegidas-de-chile">Connect!</a></p>
-
-<h2 id="fedora">Fedora</h2>
-<p>The Fedora Join Special Interest Group (SIG) aims to set up and maintain channels that let prospective contributors engage with the community. The Fedora Join SIG enables people looking to join the Fedora community to converse with existing members, make friends, find mentors, and get a feeling of what and how the community does in general. The Join group also helps connect folks with first tasks for contribution.<br />
-<strong>Needed:</strong> Many contributors<br />
-<a href="https://web.libera.chat/#fedora-join.">Connect!</a></p>
-
-<h2 id="gluster">Gluster</h2>
-<p>Gluster is a scalable, distributed file system that aggregates disk storage resources from multiple servers into a single global namespace.<br />
-<strong>Needed:</strong> Linux system programmers<br />
-<a href="https://www.gluster.org/community/">Connect!</a></p>
-
-<h2 id="libreoffice">LibreOffice</h2>
-<p>Free and open source office suite – successor to OpenOffice(.org).<br />
-<strong>Needed:</strong> Developers, designers, testers, translators, documentation writers, and help with marketing and infrastructure<br />
-<a href="https://www.libreoffice.org/community/get-involved/">Connect!</a></p>
-
-<h2 id="meshery">Meshery</h2>
-<p>Meshery is the open source, service mesh management plane for enabling the adoption, operation, and management of any service mesh and their workloads.<br />
-<strong>Needed:</strong> Community managers and ambassadors, documentation using video and other media, user ambassadors (designing new user guides and example flows for how to use the project), bloggers, technical writers<br />
-<a href="https://layer5.io/community/newcomers">Connect!</a></p>
-
-<h2 id="project-thoth">Project Thoth</h2>
-<p>Using Artificial Intelligence to analyse and recommend Software Stacks for Artificial Intelligence applications.<br />
-<strong>Needed:</strong> Python developers, machine learning developers, cloud native devops<br />
-<a href="https://github.com/thoth-station">Connect!</a></p>
-
-<h2 id="qairamap-open-source">qAIRaMap Open Source</h2>
-<p>qAIRaMap Open Source is a project developed with the mentorship of UNICEF that is based in two repositories. It’s a real-time website for monitoring air quality and it consists of the following features: Real-time data from qHAWAX modules and Andean drones; downloading of historic data; and visualization of results in Google Maps.<br />
-<strong>Needed:</strong></p>
-<ul>
-  <li>Restructure layouts to improve the project’s usability.</li>
-  <li>Conduct user research to reorganize and refine the project’s navigation or menus.</li>
-  <li>Write and improve the project’s documentation.</li>
-  <li>Curate a folder of examples showing how the project is used.</li>
-  <li>Write tutorials for the project.</li>
-  <li>Write a translation for the project’s documentation.</li>
-  <li>Link to duplicate issues, and suggest new issue labels, to keep things organized.</li>
-  <li>Ask clarifying questions on recently opened issues to move the discussion forward.</li>
-  <li>Ask if you can help write a new feature.</li>
-  <li>Improve tooling and testing.<br /></li>
-</ul>
-
-<p><a href="https://qaira.github.io/">Connect!</a></p>
-
-<h2 id="qiot-project">QIoT Project</h2>
-<p>The “Quarkus meets IoT” community project puts together subject matter experts from the Quarkus area and the IoT / Edge Computing area to PoC use cases from the datacenter side to the IoT device side using Quarkus and a bunch of enterprise products from the Red Hat portfolio.<br />
-<strong>Needed:</strong> Quarkus developers, Web developers<br />
-<a href="https://qiot-project.github.io/">Connect!</a></p>
-
-<h2 id="the-qubinode">The Qubinode</h2>
-<p>Our project aims to make it easy for anyone to set up an OpenShift cluster. Red Hat has a ton of solutions for OpenShift in the cloud, but on-prem requires expensive hardware, proprietary software licensing, subscriptions, some consulting time and expertise to set things up given the complexity of the technology. This creates a barrier to entry for most people who are curious and/or wanting to explore at home or in the lab. To solve this problem, we developed the Qubinode. It is an easy to set up development kit powered by Red Hat products.<br />
-<strong>Needed:</strong> Setting up a testing infrastructure. Creating a CI/CD pipeline, where we can consistently run the qubinode-installer to deploy the supported products.<br />
-<a href="https://www.qubinode.io/">Connect!</a></p>
-
-<h2 id="stopgo">Stopgo</h2>
-<p>Stop-motion animation application for kids.<br />
-<strong>Needed:</strong> Java coders, UI code (not UX, we have a non-coder who works with school children with very specific ideas of how the application should function)<br />
-<a href="https://gitlab.com/makerbox/stopgo2">Connect!</a></p>
-
-<h2 id="taskodrill">TaskODrill</h2>
-<p>The task management application you will love. Know what to do. Don’t be afraid of forgetting something. Achieve peace of mind.<br />
-<strong>Needed:</strong> Mobile apps developers (Android and iOS), UI/UX, designers, and functionality developers<br />
-<a href="https://github.com/fcano/taskodrill">Connect!</a></p>
-
-<h2 id="vrapeutic">VRapeutic</h2>
-<p>We are a UNICEF Innovation Fund portfolio software house specializing in developing rehabilitation and therapeutic solutions, with a focus on learning and developmental challenges.<br />
-<strong>Needed:</strong> Copywriters, graphic designers, web designers, web developers, concept artists, game designers, marketing specialists, medical sales specialists, digital marketing professionals, UI/UX specialists, explainer video designers and editors<br />
-<a href="https://www.facebook.com/myvrapeutic/">Connect!</a></p>
+  </nav>
 
 
-      <footer class="site-footer">
-  <p>
-    <a href="http://www.redhat.com"><img id="sponsorship" src="/assets/images/sponsoredredhat.png" style="vertical-align:middle"></a>.
-    
-</footer>
+	
+      
+	  
+    <header role="banner">
 
+      <section class="dms-band pt-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 pt-lg-12">
+                  <h1>Building stronger communities</h1>
+                    <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et </p>
+                </div>
+                <div class="col-md-7">
+                    <p class=""><img class="img-fluid" src="/assets/images/cl-projects_hero.png" alt="Students and graphics"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </header>
+
+
+
+    <main id="content" role="main">
+      <section class="dms-band pt-2 pt-lg-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xl-3">
+
+                    <!-- <div class="form-group has-search pb-4">
+                      <input type="text" class="form-control text-gray-100" placeholder="Search projects">
+                      <span class="fa fa-search form-control-feedback"></span>
+                    </div> -->
+                    <div class="card bg-white border">
+                    <div class="card-header bg-gray-100 py-2">
+                      <p>Filter by</p>
+                    </div>
+
+                    <div class="card-body px-1">
+                        <pfe-accordion  class="PFElement" on="light">
+                          <pfe-accordion-header expanded>
+                            <h3>Contributor type</h3>
+                          </pfe-accordion-header>
+                          <pfe-accordion-panel expanded>
+                            <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" value="developer">Developer
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14">xx</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" value="designer">Designer
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14">xx</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" value="writer">Content writer
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14">xx</p></div>
+                        </div>
+                          </pfe-accordion-panel>
+                          <pfe-accordion-header>
+                            <h3>Field of interest</h3>
+                          </pfe-accordion-header>
+                          <pfe-accordion-panel>
+                            <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" value="healthcare">Healthcare
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14">xx</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" value="environmental">Environmental
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14">xx</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" value="social">Social
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14">xx</p></div>
+                        </div>
+                        
+                          </pfe-accordion-panel>
+                         
+                          </pfe-accordion-panel>
+                        </pfe-accordion>
+
+                    </div>
+
+                </div>
+                </div>
+                <div class="col-lg-8 offset-xl-1">
+
+                      
+                        
+                          
+                          <div class="row d-lg-flex filtered-cards">
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white">Environmental</h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">Arbor Chat</h3>
+                                  Arbor is a free and open chat system structured to provide clear, high-context communication in a user-respecting way.
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://arbor.chat" class="btn btn-link" title="Arbor Chat">Connect</a>
+                                </div>
+                            </div>
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">Augur</h3>
+                                  We are an open source software health and sustainability project, affiliated with the <a href='https://chaoss.community' title='CHAOSS Project'>CHAOSS Project</a>
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://augurlabs.io" class="btn btn-link" title="Augur">Connect</a>
+                                </div>
+                            </div>
+                            
+                          </div>
+                        
+                          
+                          <div class="row d-lg-flex filtered-cards">
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">Cboard</h3>
+                                  Cboard is an Augmentative and Alternative Communication (AAC) web app for children and adults with speech and language impairments, aiding communication with symbols<pfe-collapse><pfe-collapse-panel> and text-to-speech. This versatile application has been designed with the support of UNICEF and provides a unique voice for those who wish to communicate using the application’s language platform.</pfe-collapse-panel><pfe-collapse-toggle><span class='toggle-more text-blue'>See more...</span><span class='toggle-less text-blue'>See less...</span></pfe-collapse-toggle></pfe-collapse>
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://github.com/cboard-org/cboard" class="btn btn-link" title="Cboard">Connect</a>
+                                </div>
+                            </div>
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">ChRIS</h3>
+                                  ChRIS is a general-purpose, open source distributed data and computation platform primarily aimed at improving medical research.
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="http://chrisproject.org" class="btn btn-link" title="ChRIS">Connect</a>
+                                </div>
+                            </div>
+                            
+                          </div>
+                        
+                          
+                          <div class="row d-lg-flex filtered-cards">
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">Eclipse Che</h3>
+                                  Cloud IDE manager for development teams.
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://github.com/eclipse/che/blob/master/CONTRIBUTING.md" class="btn btn-link" title="Eclipse Che">Connect</a>
+                                </div>
+                            </div>
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">Elün</h3>
+                                  Elün proposes the use of photos taken by visitors of Protected Areas, plus information provided by their cell phone sensors, to create a monitoring system. Which will be<pfe-collapse><pfe-collapse-panel> aimed at research and subsequent decision-making for the conservation of biodiversity in these places. The concept of participation is called «Citizen Science». The project includes the creation of a system that processes the images obtained through image recognition. It proposes an interface (web) that organizes the information temporally and geographically for the dissemination and analysis of experts and enthusiasts.</pfe-collapse-panel><pfe-collapse-toggle><span class='toggle-more text-blue'>See more...</span><span class='toggle-less text-blue'>See less...</span></pfe-collapse-toggle></pfe-collapse> 
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://ingenieria.udd.cl/centroid/laboratorios-de-investigacion/extreme-environmental-lab/#!/modal/272/elun-sistema-colaborativo-de-monitoreo-para-areas-protegidas-de-chile" class="btn btn-link" title="Elün">Connect</a>
+                                </div>
+                            </div>
+                            
+                          </div>
+                        
+                          
+                          <div class="row d-lg-flex filtered-cards">
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">Fedora</h3>
+                                  The Fedora Join Special Interest Group (SIG) aims to set up and maintain channels that let prospective contributors engage with the community. The Fedora<pfe-collapse><pfe-collapse-panel> Join SIG enables people looking to join the Fedora community to converse with existing members, make friends, find mentors, and get a feeling of what and how the community does in general. The Join group also helps connect folks with first tasks for contribution.</pfe-collapse-panel><pfe-collapse-toggle><span class='toggle-more text-blue'>See more...</span><span class='toggle-less text-blue'>See less...</span></pfe-collapse-toggle></pfe-collapse>
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://web.libera.chat/#fedora-join." class="btn btn-link" title="Fedora">Connect</a>
+                                </div>
+                            </div>
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">Gluster</h3>
+                                  Gluster is a scalable, distributed file system that aggregates disk storage resources from multiple servers into a single global namespace.
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://www.gluster.org/community/" class="btn btn-link" title="Gluster">Connect</a>
+                                </div>
+                            </div>
+                            
+                          </div>
+                        
+                          
+                          <div class="row d-lg-flex filtered-cards">
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">LibreOffice</h3>
+                                  Free and open source office suite – successor to OpenOffice(.org).
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://www.libreoffice.org/community/get-involved/" class="btn btn-link" title="LibreOffice">Connect</a>
+                                </div>
+                            </div>
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">Meshery</h3>
+                                  Meshery is the open source, service mesh management plane for enabling the adoption, operation, and management of any service mesh and their workloads.
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://layer5.io/community/newcomers" class="btn btn-link" title="Meshery">Connect</a>
+                                </div>
+                            </div>
+                            
+                          </div>
+                        
+                          
+                          <div class="row d-lg-flex filtered-cards">
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">Project Thoth</h3>
+                                  Using Artificial Intelligence to analyse and recommend Software Stacks for Artificial Intelligence applications.
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://github.com/thoth-station" class="btn btn-link" title="Project Thoth">Connect</a>
+                                </div>
+                            </div>
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">qAIRaMap Open Source</h3>
+                                  qAIRaMap Open Source is a project developed with the mentorship of UNICEF that is based in two repositories. It's a real-time<pfe-collapse><pfe-collapse-panel> website for monitoring air quality and it consists of the following features: Real-time data from qHAWAX modules and Andean drones; downloading of historic data; and visualization of results in Google Maps.<ul class='pt-2'><li>Restructure layouts to improve the project’s usability.</li><li>Conduct user research to reorganize and refine the project’s navigation or menus.</li><li>Write and improve the project’s documentation.</li><li>Curate a folder of examples showing how the project is used.</li><li>Write tutorials for the project.</li><li>Write a translation for the project’s documentation.</li><li>Link to duplicate issues, and suggest new issue labels, to keep things organized.</li><li>Ask clarifying questions on recently opened issues to move the discussion forward.</li><li>Ask if you can help write a new feature.</li><li>Improve tooling and testing.</li></ul></pfe-collapse-panel><pfe-collapse-toggle><span class='toggle-more text-blue'>See more...</span><span class='toggle-less text-blue'>See less...</span></pfe-collapse-toggle></pfe-collapse>
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://qaira.github.io/" class="btn btn-link" title="qAIRaMap Open Source">Connect</a>
+                                </div>
+                            </div>
+                            
+                          </div>
+                        
+                          
+                          <div class="row d-lg-flex filtered-cards">
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">QIoT Project</h3>
+                                  The 'Quarkus meets IoT' community project puts together subject matter experts from the Quarkus area and the IoT / Edge Computing area to PoC use cases from the<pfe-collapse><pfe-collapse-panel> datacenter side to the IoT device side using Quarkus and a bunch of enterprise products from the Red Hat portfolio.</pfe-collapse-panel><pfe-collapse-toggle><span class='toggle-more text-blue'>See more...</span><span class='toggle-less text-blue'>See less...</span></pfe-collapse-toggle></pfe-collapse>
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://qiot-project.github.io/" class="btn btn-link" title="QIoT Project">Connect</a>
+                                </div>
+                            </div>
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">The Qubinode</h3>
+                                  Our project aims to make it easy for anyone to set up an OpenShift cluster. Red Hat has a ton of solutions for OpenShift in the cloud, but on-prem requires<pfe-collapse><pfe-collapse-panel> expensive hardware, proprietary software licensing, subscriptions, some consulting time and expertise to set things up given the complexity of the technology. This creates a barrier to entry for most people who are curious and/or wanting to explore at home or in the lab. To solve this problem, we developed the Qubinode. It is an easy to set up development kit powered by Red Hat products.</pfe-collapse-panel><pfe-collapse-toggle><span class='toggle-more text-blue'>See more...</span><span class='toggle-less text-blue'>See less...</span></pfe-collapse-toggle></pfe-collapse>
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://www.qubinode.io/" class="btn btn-link" title="The Qubinode">Connect</a>
+                                </div>
+                            </div>
+                            
+                          </div>
+                        
+                          
+                          <div class="row d-lg-flex filtered-cards">
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">Stopgo</h3>
+                                  Stop-motion animation application for kids.
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://gitlab.com/makerbox/stopgo2" class="btn btn-link" title="Stopgo">Connect</a>
+                                </div>
+                            </div>
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">TaskODrill</h3>
+                                  The task management application you will love. Know what to do. Don't be afraid of forgetting something. Achieve peace of mind.
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://github.com/fcano/taskodrill" class="btn btn-link" title="TaskODrill">Connect</a>
+                                </div>
+                            </div>
+                            
+                          </div>
+                        
+                          
+                          <div class="row d-lg-flex filtered-cards">
+                            
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white"></h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">vRapeutic</h3>
+                                  We are a UNICEF Innovation Fund portfolio software house specializing in developing rehabilitation and therapeutic solutions, with a focus on learning<pfe-collapse><pfe-collapse-panel> and developmental challenges.</pfe-collapse-panel><pfe-collapse-toggle><span class='toggle-more text-blue'>See more...</span><span class='toggle-less text-blue'>See less...</span></pfe-collapse-toggle></pfe-collapse>
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="https://www.facebook.com/myvrapeutic/" class="btn btn-link" title="vRapeutic">Connect</a>
+                                </div>
+                            </div>
+                            
+                          </div>
+                        
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+      
 
     </main>
+    <footer class="dms-band site-footer bg-black py-2 mt-0">
+	<div class="container text-white">
+	  	<div class="row d-flex ">
+	  		<div class="col-8 mx-auto">
+		  		<h3 class="text-center">Supported by
+		    	<a href="http://www.redhat.com"><img  src="https://www.redhat.com/cms/managed-files/logo-RedHat_white.svg" alt="Red Hat" class="img-fluid" w="200"></a></h3>
+		    </div>
+	    </div>
+	</div>
 
-<!-- SCRIPTS start -->
+    <!-- SCRIPTS start -->
 
   <!-- Vendors -->
   <!-- <script src="@@vendor_js"></script> -->
   <script src="//www.redhat.com/ux/webdms/js/vendors/jquery.waypoints.min.js"></script>
 
+  <!-- Red Hat -->
+  <script src="//www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.webcomponents.js"></script>
+
   <!-- Studio Web -->
   <script src="//www.redhat.com/ux/webdms/js/scripts.min.js"></script>
 
   <!-- Project -->
-  <!-- <script src="/assets/js/project.json"></script> -->
   <script src="/assets/js/contributor-link.js"></script>
 
 <!-- SCRIPTS end -->
+    
+</footer>
+
   </body>
 </html>

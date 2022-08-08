@@ -1,4 +1,13 @@
 /* ============================== */
+/*  FILTER PROJECTS
+/* ============================== */
+
+(function($){
+    
+})(jQuery);
+
+
+/* ============================== */
 /*  MENU
 /* ============================== */
 
@@ -24,27 +33,27 @@ $(document).ready(function(){
     function closeNav(){
         $screen.removeClass("shelf-open");
         $('.btn-toggle').removeClass("active");
-        $nav_shelf.find(".accordion-panel").collapse('hide');
         $nav_shelf.removeClass("shelf-open");
         $("body").css("overflow","auto");
     }
     
     function initNav(){
-        $(".accordion-panel").on("show.bs.collapse", function(){
-            var $wrapper = $(this).parent(".nav-group-wrapper");
-            $wrapper.css("backgroundPosition","left 0px");
-        });
-        
-        $(".accordion-panel").on("hide.bs.collapse", function(){
-            var $wrapper = $(this).parent(".nav-group-wrapper");
-            $wrapper.css("backgroundPosition","left 100px");
-        });
         
         $("[data-toggle='nav-shelf']").on("click", function(e){
-            console.log('click it');
             e.preventDefault();
             return $nav_shelf.hasClass("shelf-open") ? closeNav() : openNav($(this).data("toggle-panel"));
         });
     }
+
+/* ================================== */
+/*  CHANGE TEXT FOR TOGGLE ON CARDS
+/* ================================== */
+
+    if ($(".PFElement").attr("aria-expanded") === "true"){
+        console.log('true!');
+    }
+
+
+
     
 });

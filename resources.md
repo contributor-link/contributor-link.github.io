@@ -1,3 +1,7 @@
+---
+layout: resources
+---
+
 Contributor.Link is about more than just connecting contributors to projects. We are also here to provide support for new contributors, so they can learn the best ways to join and contribute to a project. At the same time, we will work with participating projects to ensure their community is as welcoming to all contributors as possible! 
 
 The resources to accomplish this can be found on this page, which will grow as Contributor.Link does!

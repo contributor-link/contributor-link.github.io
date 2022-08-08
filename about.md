@@ -1,3 +1,7 @@
+---
+layout: about
+---
+
 When members of Red Hat’s Open Source Program Office and Open Studio teams came together to seek new initiatives around Red Hat’s [Code is Open](https://www.redhat.com/en/our-code-is-open) campaign, it soon became clear that building on the work of the original OpenHatch project would be such an initiative. After learning more about the origins and mission of OpenHatch from some of the original project maintainers, the inspiration of OpenHatch’s incredible work lifted us to create Contributor.Link.
 
 ## Building stronger communities
