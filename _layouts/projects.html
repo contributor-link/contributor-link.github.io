@@ -86,7 +86,7 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" value="developer">Developer
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="dev" value="developer">Developer
                               </label>
                             </div>
                           </div>
@@ -96,7 +96,7 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" value="designer">Designer
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="des" value="designer">Designer
                               </label>
                             </div>
                           </div>
@@ -106,7 +106,7 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" value="writer">Content writer
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="contentWriter" value="writer">Content writer
                               </label>
                             </div>
                           </div>
@@ -121,7 +121,7 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" value="healthcare">Healthcare
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="Healthcare" value="healthcare">Healthcare
                               </label>
                             </div>
                           </div>
@@ -131,7 +131,7 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" value="environmental">Environmental
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="env" value="environmental">Environmental
                               </label>
                             </div>
                           </div>
@@ -141,7 +141,7 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" value="social">Social
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="social" value="social">Social
                               </label>
                             </div>
                           </div>
@@ -159,11 +159,15 @@
                 </div>
                 <div class="col-lg-8 offset-xl-1">
 
+
                       {% assign rows = site.data.projects.size | divided_by: 2.0 | ceil %}
                         {% for i in (1..rows) %}
                           {% assign offset = forloop.index0 | times: 2 %}
+                          
                           <div class="row d-lg-flex filtered-cards">
                             {% for project in site.data.projects limit:2 offset:offset %}
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white">{{ project.Interest }}</h4>
@@ -175,11 +179,13 @@
                                 <div class="card-footer pt-0">
                                   <a href="{{ project.ProjectUrl }}" class="btn btn-link" title="{{ project.ProjectName }}">{{ project.UrlText }}</a>
                                 </div>
+                             
                             </div>
                             {% endfor %}
                           </div>
-                        {% endfor %}
 
+                        {% endfor %}
+                        
                     </div>
                 </div>
                 

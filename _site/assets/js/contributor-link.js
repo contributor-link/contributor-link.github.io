@@ -1,10 +1,8 @@
-/* ============================== */
-/*  FILTER PROJECTS
-/* ============================== */
+/*(function($){
 
-(function($){
+
     
-})(jQuery);
+})(jQuery);*/
 
 
 /* ============================== */
@@ -53,7 +51,25 @@ $(document).ready(function(){
         console.log('true!');
     }
 
+/* ============================== */
+/*  FILTER PROJECTS
+/* ============================== */
 
+
+    var $filters = [];
+
+    $(".form-check-input").change(function() {
+        if(this.checked) {
+            $filters.push($(this).val());
+            
+        }else{
+            $filters.pop($(this).val());
+        }
+
+        console.log($filters.toString());
+        return $filters.toString();
+
+    });
 
     
 });

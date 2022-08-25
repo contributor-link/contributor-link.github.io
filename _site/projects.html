@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#25222c">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!--<link rel="stylesheet" href="/assets/css/style.css?v=99e80bc5e3c47000ca4f809dba857fa9458829d1"> -->
+    <!--<link rel="stylesheet" href="/assets/css/style.css?v=dab15cdc569a7e927ba6c8549d653f9e92a39423"> -->
 
     <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -138,7 +138,7 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" value="developer">Developer
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="dev" value="developer">Developer
                               </label>
                             </div>
                           </div>
@@ -148,7 +148,7 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" value="designer">Designer
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="des" value="designer">Designer
                               </label>
                             </div>
                           </div>
@@ -158,7 +158,7 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" value="writer">Content writer
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="contentWriter" value="writer">Content writer
                               </label>
                             </div>
                           </div>
@@ -173,7 +173,7 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" value="healthcare">Healthcare
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="Healthcare" value="healthcare">Healthcare
                               </label>
                             </div>
                           </div>
@@ -183,7 +183,7 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" value="environmental">Environmental
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="env" value="environmental">Environmental
                               </label>
                             </div>
                           </div>
@@ -193,7 +193,7 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" value="social">Social
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="social" value="social">Social
                               </label>
                             </div>
                           </div>
@@ -211,11 +211,15 @@
                 </div>
                 <div class="col-lg-8 offset-xl-1">
 
+
                       
                         
                           
+                          
                           <div class="row d-lg-flex filtered-cards">
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white">Environmental</h4>
@@ -227,8 +231,11 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://arbor.chat" class="btn btn-link" title="Arbor Chat">Connect</a>
                                 </div>
+                             
                             </div>
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -240,16 +247,21 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://augurlabs.io" class="btn btn-link" title="Augur">Connect</a>
                                 </div>
+                             
                             </div>
                             
                           </div>
+
                         
+                          
                           
                           <div class="row d-lg-flex filtered-cards">
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
-                                  <h4 class="text-white"></h4>
+                                  <h4 class="text-white">Environmental</h4>
                                 </div>
                                 <div class="card-body">
                                   <h3 class="mb-2">Cboard</h3>
@@ -258,11 +270,14 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://github.com/cboard-org/cboard" class="btn btn-link" title="Cboard">Connect</a>
                                 </div>
+                             
                             </div>
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
-                                  <h4 class="text-white"></h4>
+                                  <h4 class="text-white">Healthcare</h4>
                                 </div>
                                 <div class="card-body">
                                   <h3 class="mb-2">ChRIS</h3>
@@ -271,13 +286,18 @@
                                 <div class="card-footer pt-0">
                                   <a href="http://chrisproject.org" class="btn btn-link" title="ChRIS">Connect</a>
                                 </div>
+                             
                             </div>
                             
                           </div>
+
                         
+                          
                           
                           <div class="row d-lg-flex filtered-cards">
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -289,8 +309,11 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://github.com/eclipse/che/blob/master/CONTRIBUTING.md" class="btn btn-link" title="Eclipse Che">Connect</a>
                                 </div>
+                             
                             </div>
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -302,13 +325,18 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://ingenieria.udd.cl/centroid/laboratorios-de-investigacion/extreme-environmental-lab/#!/modal/272/elun-sistema-colaborativo-de-monitoreo-para-areas-protegidas-de-chile" class="btn btn-link" title="Elün">Connect</a>
                                 </div>
+                             
                             </div>
                             
                           </div>
+
                         
+                          
                           
                           <div class="row d-lg-flex filtered-cards">
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -320,8 +348,11 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://web.libera.chat/#fedora-join." class="btn btn-link" title="Fedora">Connect</a>
                                 </div>
+                             
                             </div>
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -333,13 +364,18 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://www.gluster.org/community/" class="btn btn-link" title="Gluster">Connect</a>
                                 </div>
+                             
                             </div>
                             
                           </div>
+
                         
+                          
                           
                           <div class="row d-lg-flex filtered-cards">
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -351,8 +387,11 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://www.libreoffice.org/community/get-involved/" class="btn btn-link" title="LibreOffice">Connect</a>
                                 </div>
+                             
                             </div>
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -364,13 +403,18 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://layer5.io/community/newcomers" class="btn btn-link" title="Meshery">Connect</a>
                                 </div>
+                             
                             </div>
                             
                           </div>
+
                         
+                          
                           
                           <div class="row d-lg-flex filtered-cards">
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -382,8 +426,11 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://github.com/thoth-station" class="btn btn-link" title="Project Thoth">Connect</a>
                                 </div>
+                             
                             </div>
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -395,13 +442,18 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://qaira.github.io/" class="btn btn-link" title="qAIRaMap Open Source">Connect</a>
                                 </div>
+                             
                             </div>
                             
                           </div>
+
                         
+                          
                           
                           <div class="row d-lg-flex filtered-cards">
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -413,8 +465,11 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://qiot-project.github.io/" class="btn btn-link" title="QIoT Project">Connect</a>
                                 </div>
+                             
                             </div>
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -426,13 +481,18 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://www.qubinode.io/" class="btn btn-link" title="The Qubinode">Connect</a>
                                 </div>
+                             
                             </div>
                             
                           </div>
+
                         
+                          
                           
                           <div class="row d-lg-flex filtered-cards">
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -444,8 +504,11 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://gitlab.com/makerbox/stopgo2" class="btn btn-link" title="Stopgo">Connect</a>
                                 </div>
+                             
                             </div>
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -457,13 +520,18 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://github.com/fcano/taskodrill" class="btn btn-link" title="TaskODrill">Connect</a>
                                 </div>
+                             
                             </div>
                             
                           </div>
+
                         
+                          
                           
                           <div class="row d-lg-flex filtered-cards">
                             
+                             
+                             
                              <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
                                 <div class="card-header bg-teal-dark py-1">
                                   <h4 class="text-white"></h4>
@@ -475,11 +543,13 @@
                                 <div class="card-footer pt-0">
                                   <a href="https://www.facebook.com/myvrapeutic/" class="btn btn-link" title="vRapeutic">Connect</a>
                                 </div>
+                             
                             </div>
                             
                           </div>
-                        
 
+                        
+                        
                     </div>
                 </div>
                 
