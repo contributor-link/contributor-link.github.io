@@ -14,6 +14,9 @@ $font-family-monospace: 'Overpass Mono', Consolas, Monaco, Andale Mono, monospac
 body {
     background: #ffffff;
     font-family: 'Red Hat Text', sans-serif;
+    --pfe-accordion--accent: #307B7D !important; 
+	--pfe-accordion--accent--expanded: #307B7D !important;
+	--pfe-theme--color--ui-accent:  #307B7D !important;
 }
 
 h1,
@@ -193,6 +196,9 @@ h6 {
         }
     }
 
+body{
+	
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&family=Red+Hat+Display&display=swap');
 

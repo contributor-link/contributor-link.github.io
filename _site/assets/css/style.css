@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text&family=Red+Hat+Display&display=swap");
-body { background: #ffffff; font-family: 'Red Hat Text', sans-serif; }
+body { background: #ffffff; font-family: 'Red Hat Text', sans-serif; --pfe-accordion--accent: #307B7D !important; --pfe-accordion--accent--expanded: #307B7D !important; --pfe-theme--color--ui-accent: #307B7D !important; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Red Hat Display'; }
 

@@ -90,7 +90,7 @@
                               </label>
                             </div>
                           </div>
-                          <div class="col-3"><p class="font-size-14">xx</p></div>
+                          <div class="col-3"><p class="font-size-14"><span class="dev-count">16</span></p></div>
                         </div>
                         <div class="row">
                             <div class="col-9">
@@ -100,7 +100,7 @@
                               </label>
                             </div>
                           </div>
-                          <div class="col-3"><p class="font-size-14">xx</p></div>
+                          <div class="col-3"><p class="font-size-14"><span class="des-count">7</span></p></div>
                         </div>
                         <div class="row">
                             <div class="col-9">
@@ -110,7 +110,7 @@
                               </label>
                             </div>
                           </div>
-                          <div class="col-3"><p class="font-size-14">xx</p></div>
+                          <div class="col-3"><p class="font-size-14"><span class="content-count">11</span></p></div>
                         </div>
                           </pfe-accordion-panel>
                           <pfe-accordion-header>
@@ -121,31 +121,92 @@
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="AI-ML" value="AIML">AI/ML
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="aiml-count">2</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="cloud" value="cloud">Cloud
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="cloud-count">2</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="communication" value="communication">Communication
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="communication-count">1</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="development" value="development">Development
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="development-count">1</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="edge-computing" value="edge-computing">Edge computing
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="edge-computing-count">1</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="education" value="education">Education
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="education-count">3</span></p></div>
+                        </div>
+                            
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="env" value="environmental">Environment
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="environment-count">1</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
                                 <input type="checkbox" class="form-check-input mr-1" name="categories" id="Healthcare" value="healthcare">Healthcare
                               </label>
                             </div>
                           </div>
-                          <div class="col-3"><p class="font-size-14">xx</p></div>
+                          <div class="col-3"><p class="font-size-14"><span class="healthcare-count">1</span></p></div>
                         </div>
                         <div class="row">
                             <div class="col-9">
                             <div class="form-check">
                               <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="env" value="environmental">Environmental
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="mobile" value="mobile">Mobile
                               </label>
                             </div>
                           </div>
-                          <div class="col-3"><p class="font-size-14">xx</p></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-9">
-                            <div class="form-check">
-                              <label class="form-check-label font-size-14">
-                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="social" value="social">Social
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-3"><p class="font-size-14">xx</p></div>
+                          <div class="col-3"><p class="font-size-14"><span class="mobile-count">1</span></p></div>
                         </div>
                         
                           </pfe-accordion-panel>
@@ -168,9 +229,9 @@
                             {% for project in site.data.projects limit:2 offset:offset %}
                              
                              
-                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100">
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100 project-card">
                                 <div class="card-header bg-teal-dark py-1">
-                                  <h4 class="text-white">{{ project.Interest }}</h4>
+                                  <h4 class="text-white interest">{{ project.Interest }}</h4>
                                 </div>
                                 <div class="card-body">
                                   <h3 class="mb-2">{{ project.ProjectName }}</h3>

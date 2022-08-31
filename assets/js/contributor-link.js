@@ -1,15 +1,6 @@
 ---
 ---
 
-
-
-/*(function($){
-
-
-    
-})(jQuery);*/
-
-
 /* ============================== */
 /*  MENU
 /* ============================== */
@@ -68,7 +59,7 @@ $(document).ready(function(){
             $filters.push($(this).val());
             
         }else{
-            $filters.pop($(this).val());
+            $filters = $filters.filter((n) => {return n != $(this).val()});
         }
 
         console.log($filters.toString());

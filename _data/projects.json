@@ -8,10 +8,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Golang software developers, UX designer, technical writers",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": "Environmental"
+        "ContributionsNeeded_Design": "Y",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "Y",
+        "Interest": "Communication"
     },
     {
         "ProjectName": "Augur",
@@ -22,10 +22,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Testing, documentation, deployment, marketing, software engineering (debugging), front end design",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "N",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "Y",
+        "Interest": "Community"
     },
     {
         "ProjectName": "Cboard",
@@ -36,10 +36,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Marketing/social media content creators, code contributors, proofreaders",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": "Environmental"
+        "ContributionsNeeded_Design": "N",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "Y",
+        "Interest": "Education"
     },
     {
         "ProjectName": "ChRIS",
@@ -50,9 +50,9 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Front end developers, openstack/openshift devops, docs, UX",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
+        "ContributionsNeeded_Design": "Y",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "Y",
         "Interest": "Healthcare"
     },
     {
@@ -64,10 +64,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Documentation writers, testers, code contributors",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "N",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "Y",
+        "Interest": "Development"
     },
     {
         "ProjectName": "Elün",
@@ -78,10 +78,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "AI developers, marketing specialists, graphic designers",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "Y",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "Y",
+        "Interest": "Environment"
     },
     {
         "ProjectName": "Fedora",
@@ -92,10 +92,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Many contributors",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "Y",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "Y",
+        "Interest": "Community"
     },
     {
         "ProjectName": "Gluster",
@@ -106,10 +106,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Linux system programmers",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "N",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "N",
+        "Interest": "Community"
     },
     {
         "ProjectName": "LibreOffice",
@@ -120,10 +120,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Developers, designers, testers, translators, documentation writers, and help with marketing and infrastructure",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "Y",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "Y",
+        "Interest": "Community"
     },
     {
         "ProjectName": "Meshery",
@@ -134,10 +134,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Community managers and ambassadors, documentation using video and other media, user ambassadors (designing new user guides and example flows for how to use the project), bloggers, technical writers",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "N",
+        "ContributionsNeeded_Code": "N",
+        "ContributionsNeeded_Content": "Y",
+        "Interest": "Cloud"
     },
     {
         "ProjectName": "Project Thoth",
@@ -148,10 +148,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Python developers, machine learning developers, cloud native devops",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "N",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "N",
+        "Interest": "AI/ML"
     },
     {
         "ProjectName": "qAIRaMap Open Source",
@@ -162,10 +162,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Python developers, machine learning developers, cloud native devops",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "N",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "Y",
+        "Interest": "AI/ML"
     },
     {
         "ProjectName": "QIoT Project",
@@ -176,10 +176,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Quarkus developers, Web developers",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "N",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "N",
+        "Interest": "Edge computing"
     },
     {
         "ProjectName": "The Qubinode",
@@ -190,10 +190,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Setting up a testing infrastructure. Creating a CI/CD pipeline, where we can consistently run the qubinode-installer to deploy the supported products.",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "N",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "N",
+        "Interest": "Cloud"
     },
     {
         "ProjectName": "Stopgo",
@@ -204,10 +204,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Java coders, UI code (not UX, we have a non-coder who works with school children with very specific ideas of how the application should function)",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "N",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "N",
+        "Interest": "Education"
     },
     {
         "ProjectName": "TaskODrill",
@@ -218,10 +218,10 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Mobile apps developers (Android and iOS), UI/UX, designers, and functionality developers",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "Y",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "N",
+        "Interest": "Mobile"
     },
     {
         "ProjectName": "vRapeutic",
@@ -232,9 +232,9 @@
         "ProjectContactName": "",
         "ProjectContactInfo": "",
         "ContributionsNeeded": "Copywriters, graphic designers, web designers, web developers, concept artists, game designers, marketing specialists, medical sales specialists, digital marketing professionals, UI/UX specialists, explainer video designers and editors",
-        "ContributionsNeeded_Design": "",
-        "ContributionsNeeded_Code": "",
-        "ContributionsNeeded_Content": "",
-        "Interest": ""
+        "ContributionsNeeded_Design": "Y",
+        "ContributionsNeeded_Code": "Y",
+        "ContributionsNeeded_Content": "Y",
+        "Interest": "Education"
     }
 ]
