@@ -48,15 +48,46 @@ $(document).ready(function(){
 /*  FILTER PROJECTS
 /* ============================== */
 
+    var projectObj;
 
-    var $filters = [];
+    $.getJSON('../assets/js/projects.json', function(responseObject){
+        projectObj = responseObject;
+    });
 
+    let $filters = [];
+    let $selectedProjects = {};
+    const $container = $("#filtered-cards");
+
+    /* Collect filters to apply */
     $(".form-check-input").change(function() {
         if(this.checked) {
-            $filters.push($(this).val());
+
+            for (var i=0; i<projectObj.length; i++){
+                
+                if (projectObj[i].Interest == $(this).val() || projectObj[i].Contributions.includes($(this).val())){
+                        $selectedProjects.name = projectObj[i].ProjectName;
+                        $selectedProjects.url = projectObj[i].ProjectUrl;
+                        $selectedProjects.urlText = projectObj[i].UrlText;
+                        $selectedProjects.description = projectObj[i].ProjectDescription;
+                        $selectedProjects.interest = projectObj[i].Interest;
+
+                    console.log($selectedProjects);
+                    if (! $filters.includes($selectedProjects)){
+                        $filters.push($selectedProjects);
+                    }
+                    
+                    updateProducts($filters);
+                }
+            }
+
+            $('#unfiltered-cards').css('display', 'none');
+            //updateProducts($filters);
             
-        }else{
+        }else if ($filters.length > 0){
             $filters = $filters.filter((n) => {return n != $(this).val()});
+            updateProducts($filters);
+        }else{
+            $('#unfiltered-cards').css('display', 'block');
         }
 
         console.log($filters.toString());
@@ -64,5 +95,13 @@ $(document).ready(function(){
 
     });
 
-    
-});
+
+    updateProducts = function (collection) {
+        //$container.empty();
+        for (var i = 0; i < collection.length; i++) {
+            $container.append("<div class='card bg-white border mb-4 mx-2 ml-lg-0 w-100 project-card'><div class='card-header bg-teal-dark py-1'><h4 class='text-white interest'>" + collection[i].interest + "</h4></div><div class='card-body'><h3 class='mb-2'>" + collection[i].name + "</h3>" + collection[i].description + "</div><div class='card-footer pt-0'><a href='" + collection[i].url + "' class='btn btn-link' title='" + collection[i].name + "'>" + collection[i].urlText + "</a></div></div>");
+        }
+    }
+
+    /*$container.append("<div class='card bg-white border mb-4 mx-2 ml-lg-0 w-100 project-card'><div class='card-header bg-teal-dark py-1'><h4 class='text-white interest'></h4></div><div class='card-body'><h3 class='mb-2'></h3></div><div class='card-footer pt-0'><a href='' class='btn btn-link' title=''></a></div></div>");
+*/});

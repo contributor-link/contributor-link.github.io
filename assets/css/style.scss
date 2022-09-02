@@ -168,11 +168,12 @@ h6 {
 
 
 
-.filtered-cards .card{
+.product-cards .card{
 
 	@media only screen and (min-width: 800px){
     	width: 350px;
     	max-width: 350px;
+    	min-width: 286px;
 	}
  }
 
