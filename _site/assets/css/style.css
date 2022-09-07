@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Red Hat Display'; }
 .contributor-link-nav-shelf-screen { position: fixed; top: 69px; height: 100%; width: 100%; z-index: 97; background-color: #222; opacity: 0; pointer-events: none; transition: opacity 400ms cubic-bezier(0.5, 0, 0.5, 1); }
 .contributor-link-nav-shelf-screen.shelf-open { opacity: 1; pointer-events: initial; }
 
+.hidden { display: none !important; }
+
+.show { display: block !important; }
+
 @media only screen and (min-width: 800px) { .product-cards .card { width: 350px; max-width: 350px; min-width: 286px; } }
 
 /* ============================================== */
