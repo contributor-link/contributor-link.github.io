@@ -58,21 +58,29 @@ $(document).ready(function(){
     });
 
     let $filters = [];
-    let $selectedProjects = {};
     const $container = $("#filtered-cards");
     let $unfiltered = [];
     const $resetContainer = $("#unfiltered-cards");
+    let count = 0;
+    
+
 
     /* Collect filters to apply */
     $(".form-check-input").change(function() {
+
+        /* Check if all checkboxes are checked*/
+         var checked = document.querySelectorAll('input[type="checkbox"]:checked').length;
+
         if(this.checked) {
 
-            /* Handle previously selected projects */
-            $container.empty();
-            $("#filtered-cards").css('display', 'flex');
+            /* Handle if projects were previously selected */
+            $resetContainer.css('display', 'none');
+            $container.css('display', 'flex');
 
             /* Make array of selected project objects */
             for (var i=0; i<projectObj.length; i++){
+
+                let $selectedProjects = {};
                 
                 if (projectObj[i].Interest == $(this).val() || projectObj[i].Contributions.includes($(this).val())){
                         $selectedProjects.name = projectObj[i].ProjectName;
@@ -81,25 +89,26 @@ $(document).ready(function(){
                         $selectedProjects.description = projectObj[i].ProjectDescription;
                         $selectedProjects.interest = projectObj[i].Interest;
 
-                    console.log('selected'+ $selectedProjects);
-                    /* Add selected projects to array */
-                    if (! $filters.includes($selectedProjects)){
+                    /* Add selected projects to array if it doesn't exist*/
+                    if (! $filters.includes($selectedProjects.name)){
                         $filters.push($selectedProjects);
-                        console.log('select: ' + $selectedProjects);
-                    }
-                    
-                    updateProducts($filters);
+                    } 
+
                 }
+
             }
 
-            $('#unfiltered-cards').css('display', 'none');
-            //updateProducts($filters);
+            filteredProducts($filters);
             
-        }else if($filters.length > 1){
-            /*$filters = $filters.filter((n) => {return n != $(this).val()});
-            updateProducts($filters);*/
-            console.log('else');
-            for (var i=0; i<projectObj.length; i++){
+
+            
+        }else if (checked === 0){
+            resetProductCards();
+        }else {
+            
+             for (var i=0; i<projectObj.length; i++){
+
+                let $selectedProjects = {};
                 
                 if (projectObj[i].Interest == $(this).val() || projectObj[i].Contributions.includes($(this).val())){
                         $selectedProjects.name = projectObj[i].ProjectName;
@@ -108,23 +117,34 @@ $(document).ready(function(){
                         $selectedProjects.description = projectObj[i].ProjectDescription;
                         $selectedProjects.interest = projectObj[i].Interest;
 
-                    if ($filters.includes($selectedProjects)){
-                        var index = $filters.indexOf($selectedProjects);
-                        $filters.splice(index, 1);
-                        console.log('select: ' + $selectedProjects);
-                    }
-                    
-                    updateProducts($filters);
+                    /* Remove selected projects from array if it's deselected */
+                    const indexOfObject = $filters.findIndex(object => {
+                        return object.name === $selectedProjects.name;
+                    });
+
+                    $filters.splice(indexOfObject, 1);
+                   
+
                 }
+
             }
-            //updateProducts($filters);
-        } else {
-            console.log('empty');
-            $('#unfiltered-cards').css('display', 'block');
-            $("#filtered-cards").css('display', 'none');
 
+            filteredProducts($filters);   
 
+        }
+
+    });
+
+    resetProductCards = function(){
+        $('#unfiltered-cards').css('display', 'block');
+        $("#filtered-cards").css('display', 'none');
+
+         /* Empty container from previous results */
+        $container.empty();
+        /* Rebuild all product cards */
             for (var i=0; i<projectObj.length; i++){
+                let $selectedProjects = {};
+
                 $selectedProjects.name = projectObj[i].ProjectName;
                 $selectedProjects.url = projectObj[i].ProjectUrl;
                 $selectedProjects.urlText = projectObj[i].UrlText;
@@ -132,28 +152,37 @@ $(document).ready(function(){
                 $selectedProjects.interest = projectObj[i].Interest;
 
                 if (! $unfiltered.includes($selectedProjects)){
-                        $unfiltered.push($selectedProjects);
+                    $unfiltered.push($selectedProjects);
                 }
                
-                //unfilteredProducts($unfiltered);
             }
-        }
-
-        console.log($filters.toString());
-        return $filters.toString();
-
-    });
+    }
 
 
-    updateProducts = function (collection) {
-        //$container.empty();
-        for (var i = 0; i < collection.length; i++) {
-            $container.append("<div class='card bg-white border mb-4 mx-2 ml-lg-0 w-100 project-card'><div class='card-header bg-teal-dark py-1'><h4 class='text-white interest'>" + collection[i].interest + "</h4></div><div class='card-body'><h3 class='mb-2'>" + collection[i].name + "</h3>" + collection[i].description + "</div><div class='card-footer pt-0'><a href='" + collection[i].url + "' class='btn btn-link' title='" + collection[i].name + "'>" + collection[i].urlText + "</a></div></div>");
+    filteredProducts = function (collection) {
+        $container.empty();
+
+        /*Check for duplicates first*/
+        var noRepeatArray = [];
+
+        $.each(collection, function(key, value) {
+            var exists = false;
+            $.each(noRepeatArray, function(k, val2) {
+              if(value.name == val2.name){ exists = true }; 
+            });
+            if(exists == false && value.name != "") { noRepeatArray.push(value); }
+        });
+
+        for (var i = 0; i < noRepeatArray.length; i++) {
+            let prodName = noRepeatArray[i].name
+            console.log('name in function: ' + prodName);
+
+            $container.append("<div class='card bg-white border mb-4 mx-2 ml-lg-0 w-100 project-card'><div class='card-header bg-teal-dark py-1'><h4 class='text-white interest'>" + noRepeatArray[i].interest + "</h4></div><div class='card-body'><h3 class='mb-2 prod-name'>" + noRepeatArray[i].name + "</h3>" + noRepeatArray[i].description + "</div><div class='card-footer pt-0'><a href='" + noRepeatArray[i].url + "' class='btn btn-link' title='" + noRepeatArray[i].name + "'>" + noRepeatArray[i].urlText + "</a></div></div>");
+
         }
     }
 
     unfilteredProducts = function (collection) {
-        //$container.empty();
         for (var i = 0; i < collection.length; i++) {
             $resetContainer.append("<div class='card bg-white border mb-4 mx-2 ml-lg-0 w-100 project-card'><div class='card-header bg-teal-dark py-1'><h4 class='text-white interest'>" + collection[i].interest + "</h4></div><div class='card-body'><h3 class='mb-2'>" + collection[i].name + "</h3>" + collection[i].description + "</div><div class='card-footer pt-0'><a href='" + collection[i].url + "' class='btn btn-link' title='" + collection[i].name + "'>" + collection[i].urlText + "</a></div></div>");
         }
