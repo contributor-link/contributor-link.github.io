@@ -36,13 +36,7 @@ $(document).ready(function(){
         });
     }
 
-/* ================================== */
-/*  CHANGE TEXT FOR TOGGLE ON CARDS
-/* ================================== */
 
-    if ($(".PFElement").attr("aria-expanded") === "true"){
-        console.log('true!');
-    }
 
 /* ============================== */
 /*  FILTER PROJECTS
@@ -58,9 +52,6 @@ $(document).ready(function(){
     const $container = $("#filtered-cards");
     let $unfiltered = [];
     const $resetContainer = $("#unfiltered-cards");
-    let count = 0;
-    
-
 
     /* Collect filters to apply */
     $(".form-check-input").change(function() {
@@ -127,7 +118,6 @@ $(document).ready(function(){
             }
 
             filteredProducts($filters);   
-
         }
 
     });
@@ -172,7 +162,6 @@ $(document).ready(function(){
 
         for (var i = 0; i < noRepeatArray.length; i++) {
             let prodName = noRepeatArray[i].name
-            console.log('name in function: ' + prodName);
 
             $container.append("<div class='card bg-white border mb-4 mx-2 ml-lg-0 w-100 project-card'><div class='card-header bg-teal-dark py-1'><h4 class='text-white interest'>" + noRepeatArray[i].interest + "</h4></div><div class='card-body'><h3 class='mb-2 prod-name'>" + noRepeatArray[i].name + "</h3>" + noRepeatArray[i].description + "</div><div class='card-footer pt-0'><a href='" + noRepeatArray[i].url + "' class='btn btn-link' title='" + noRepeatArray[i].name + "'>" + noRepeatArray[i].urlText + "</a></div></div>");
 
