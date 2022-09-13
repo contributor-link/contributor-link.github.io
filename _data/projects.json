@@ -1,3 +1,4 @@
+
 [
     {
         "ProjectName": "Arbor Chat",
@@ -11,6 +12,7 @@
         "ContributionsNeeded_Design": "Y",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "Y",
+        "Contributions": "design, code, content",
         "Interest": "Communication"
     },
     {
@@ -25,6 +27,7 @@
         "ContributionsNeeded_Design": "N",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "Y",
+        "Contributions": "code, content",
         "Interest": "Community"
     },
     {
@@ -39,6 +42,7 @@
         "ContributionsNeeded_Design": "N",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "Y",
+        "Contributions": "code, content",
         "Interest": "Education"
     },
     {
@@ -53,6 +57,7 @@
         "ContributionsNeeded_Design": "Y",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "Y",
+        "Contributions": "design, code, content",
         "Interest": "Healthcare"
     },
     {
@@ -67,6 +72,7 @@
         "ContributionsNeeded_Design": "N",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "Y",
+        "Contributions": "code, content",
         "Interest": "Development"
     },
     {
@@ -81,6 +87,7 @@
         "ContributionsNeeded_Design": "Y",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "Y",
+        "Contributions": "design, code, content",
         "Interest": "Environment"
     },
     {
@@ -95,6 +102,7 @@
         "ContributionsNeeded_Design": "Y",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "Y",
+        "Contributions": "design, code, content",
         "Interest": "Community"
     },
     {
@@ -109,6 +117,7 @@
         "ContributionsNeeded_Design": "N",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "N",
+        "Contributions": "code",
         "Interest": "Community"
     },
     {
@@ -123,6 +132,7 @@
         "ContributionsNeeded_Design": "Y",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "Y",
+        "Contributions": "design, code, content",
         "Interest": "Community"
     },
     {
@@ -137,6 +147,7 @@
         "ContributionsNeeded_Design": "N",
         "ContributionsNeeded_Code": "N",
         "ContributionsNeeded_Content": "Y",
+        "Contributions": "content",
         "Interest": "Cloud"
     },
     {
@@ -151,6 +162,7 @@
         "ContributionsNeeded_Design": "N",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "N",
+        "Contributions": "code",
         "Interest": "AI/ML"
     },
     {
@@ -165,6 +177,7 @@
         "ContributionsNeeded_Design": "N",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "Y",
+        "Contributions": "code, content",
         "Interest": "AI/ML"
     },
     {
@@ -179,6 +192,7 @@
         "ContributionsNeeded_Design": "N",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "N",
+        "Contributions": "code",
         "Interest": "Edge computing"
     },
     {
@@ -193,6 +207,7 @@
         "ContributionsNeeded_Design": "N",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "N",
+        "Contributions": "code",
         "Interest": "Cloud"
     },
     {
@@ -207,6 +222,7 @@
         "ContributionsNeeded_Design": "N",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "N",
+        "Contributions": "code",
         "Interest": "Education"
     },
     {
@@ -221,6 +237,7 @@
         "ContributionsNeeded_Design": "Y",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "N",
+        "Contributions": "design, code",
         "Interest": "Mobile"
     },
     {
@@ -235,6 +252,7 @@
         "ContributionsNeeded_Design": "Y",
         "ContributionsNeeded_Code": "Y",
         "ContributionsNeeded_Content": "Y",
+        "Contributions": "design, code, content",
         "Interest": "Education"
     }
 ]
