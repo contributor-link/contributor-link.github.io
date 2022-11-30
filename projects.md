@@ -2,7 +2,7 @@
 layout: projects
 ---
 
-The project within Contributor.Link all offer unique opportunities to make the world a better place! We are pleased to be working with these fantastic communities!
+The projects within Contributor.Link all offer unique opportunities to make the world a better place! We are pleased to be working with these fantastic communities!
 
 ## Arbor Chat
 Arbor is a free and open chat system structured to provide clear, high-context communication in a user-respecting way.<br>
