@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#25222c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"> -->
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="//static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Red Hat -->
+    <link rel="stylesheet" href="//www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.webcomponents.min.css">
+    <link rel="stylesheet" href="//static.redhat.com/libs/redhat/redhat-theme/latest/advanced-theme.css">
+    <!-- Studio Web -->
+    <link rel="stylesheet" href="//www.redhat.com/ux/webdms/css/styles.min.css">
+
+    <!-- Libraries -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  </head>
+
+  <body>
+	  
+      {% if site.data.navigation %}
+
+        {% include nav.html role="navigation" %}
+	
+      {% endif %}
+	  
+    <header role="banner">
+
+      <section class="dms-band pt-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 pt-lg-12">
+                  <h1>Building stronger communities</h1>
+                    <p class="">Bringing contributors into communities so that all can learn, prosper, and grow.</p>
+                </div>
+                <div class="col-md-7">
+                    <p class=""><img class="img-fluid" src="/assets/images/cl-projects_hero.png" alt="Students and graphics"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </header>
+
+
+
+    <main id="content" role="main">
+      <section class="dms-band pt-2 pt-lg-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xl-3">
+
+                    <!-- <div class="form-group has-search pb-4">
+                      <input type="text" class="form-control text-gray-100" placeholder="Search projects">
+                      <span class="fa fa-search form-control-feedback"></span>
+                    </div> -->
+                    <div class="card bg-white border">
+                    <div class="card-header bg-gray-100 py-2">
+                      <p>Filter by</p>
+                    </div>
+
+                    <div class="card-body px-1">
+                        <pfe-accordion  class="PFElement" on="light">
+                          <pfe-accordion-header expanded>
+                            <h3>Contributor type</h3>
+                          </pfe-accordion-header>
+                          <pfe-accordion-panel expanded>
+                            <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="dev" value="code">Developer
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="dev-count">16</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="des" value="design">Designer
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="des-count">7</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="contentWriter" value="content">Content writer
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="content-count">11</span></p></div>
+                        </div>
+                          </pfe-accordion-panel>
+                          <pfe-accordion-header>
+                            <h3>Field of interest</h3>
+                          </pfe-accordion-header>
+                          <pfe-accordion-panel>
+                            <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="AI-ML" value="AI/ML">AI/ML
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="aiml-count">2</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="cloud" value="Cloud">Cloud
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="cloud-count">2</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="communication" value="Communication">Communication
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="communication-count">1</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="community" value="Community">Community
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="communication-count">4</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="development" value="Development">Development
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="development-count">1</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="edge-computing" value="Edge computing">Edge computing
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="edge-computing-count">1</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="education" value="Education">Education
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="education-count">3</span></p></div>
+                        </div>
+                            
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="env" value="Environment">Environment
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="environment-count">1</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="Healthcare" value="Healthcare">Healthcare
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="healthcare-count">1</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                            <div class="form-check">
+                              <label class="form-check-label font-size-14">
+                                <input type="checkbox" class="form-check-input mr-1" name="categories" id="mobile" value="Mobile">Mobile
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-3"><p class="font-size-14"><span class="mobile-count">1</span></p></div>
+                        </div>
+                        
+                          </pfe-accordion-panel>
+                         
+                          </pfe-accordion-panel>
+                        </pfe-accordion>
+
+                    </div>
+
+                </div>
+                </div>
+                <div class="col-lg-8 offset-xl-1">
+
+                  <!--Hidden when filtered-->
+                    <div class="all-products" id="unfiltered-cards">
+                      {% assign rows = site.data.projects.size | divided_by: 2.0 | ceil %}
+                        {% for i in (1..rows) %}
+                          {% assign offset = forloop.index0 | times: 2 %}
+                          
+                          <div class="row d-lg-flex product-cards">
+                            {% for project in site.data.projects limit:2 offset:offset %}
+                             
+                             
+                             <div class="card bg-white border mb-4 mx-2 ml-lg-0 w-100 project-card">
+                                <div class="card-header bg-teal-dark py-1">
+                                  <h4 class="text-white interest">{{ project.Interest }}</h4>
+                                </div>
+                                <div class="card-body">
+                                  <h3 class="mb-2">{{ project.ProjectName }}</h3>
+                                  {{ project.ProjectDescription }}
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a href="{{ project.ProjectUrl }}" class="btn btn-link" title="{{ project.ProjectName }}">{{ project.UrlText }}</a>
+                                </div>
+                             
+                            </div>
+                            {% endfor %}
+                          </div>
+
+                        {% endfor %}
+                      </div>
+                        <!--Populate with results through js-->
+                        <div id="filtered-cards" class="row product-cards "></div>
+
+                    </div><!--end column-->
+                </div><!--end row-->
+                
+            </div>
+        </div>
+    </section>
+
+      
+
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

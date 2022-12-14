@@ -1,3 +1,7 @@
+---
+layout: guides
+---
+
 One of the most important topics in the open source community is "how do we attract more people to our community?" This makes perfect sense because you can’t have a community without people. Given the importance of inviting people to a community—otherwise known as onboarding—you would expect a lot of discussion and debate applied to the topic. And yet, there are many open source community managers frustrated by a lack of new contributors. 
 
 Part of this is due to the bias that "users" comprise the entirety of a community, and if your project’s output has users, viewers, or what have you, then you have your community well in hand. For some projects, that is certainly true, and will always be true. But for other projects, this can be a lost opportunity to grow the community into a healthier project with creative input alongside creative output.

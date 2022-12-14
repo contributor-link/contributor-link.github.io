@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#25222c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+      <!-- Studio Web -->
+        <link rel="stylesheet" href="//www.redhat.com/ux/webdms/css/styles.min.css">
+
+    <!-- Libraries -->
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  </head>
+  <body>
+	  
+      {% if site.data.navigation %}
+
+        <div class="wrapper">
+          <div class="nav-wrap">
+            {% include nav.html role="navigation" %}
+          </div>
+        </div>
+	
+      {% endif %}
+	  
+    <header role="banner">
+
+      <section class="dms-band bg-gray-100 pt-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                  <h1 class="pt-md-6">Building stronger communities</h1>
+                    <p class="">Bringing contributors into communities so that all can learn, prosper, and grow.</p>
+
+                </div>
+                <div class="col-md-7">
+                    <p class="pt-2 pt-md-6 pt-lg-0 text-md-right"><img class="img-fluid" src="/assets/images/cl-resources_hero.png" alt="resources graphic"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </header>
+
+
+
+    <main id="content" role="main">
+      <section class="dms-band">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xl-6 mx-auto">
+                    <p>Contributor.Link is about more than just connecting contributors to projects. We are also here to provide support for new contributors, so they can learn the best ways to join and contribute to a project. At the same time, we will work with participating projects to ensure their community is as welcoming to all contributors as possible!</p>
+                    <p>The resources to accomplish this can be found on this page, which will grow as Contributor.Link does!</p>
+                    <h2>Contributor guidlines</h2>  
+                    <p>Looking for a project? Or you’ve found a project that you really like and aren’t sure how to begin? Our <a href="/contribguide" title="contributor guidelines">contributor guidelines</a> will walk you through the process of getting your started in open source quickly and seamlessly!</p>
+                    <h2>Community guidelines.</h2>
+                    <p>If your project is actively seeking new contributors, there are some easy paths to take to ensure your <a href="/communityguide" title="community onboarding process">community onboarding process</a> is simple and clear.</p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </section>
+
+      
+
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

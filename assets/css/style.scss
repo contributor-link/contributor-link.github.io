@@ -1,48 +1,22 @@
 ---
 ---
-/* These are variables the Cayman theme defines */
 
-/* Headers */
-$header-heading-color: #ffffff;
-$header-bg-color: #ffffff;
-$header-bg-color-secondary: #ffffff;
+// Site colors
+$white: #fff;
+$black: #000;
+$nav-bg-gray: #222;
 
-/* Text */
-$section-headings-color: #4c8b8c;
-$body-text-color: #606c71;
-$body-link-color: #0066cc;
-$blockquote-text-color: #8dc396;
-
-/* Code */
-$code-bg-color: #f3f6fa;
-$code-text-color: #567482;
-
-/* Borders */
-$border-color: #dce6f0;
-$table-border-color: #e9ebec;
-$hr-border-color: #eff0f1;
-
-$nav-text-color: #aaaaaa;
-$nav-active-color: #ffffff;
-$nav-hover-color: lighten($nav-text-color, 50%);
-
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&family=Red+Hat+Display&display=swap');
-
-@import "{{ site.theme }}";
-
-#logo {
-    max-width: 832px;
-}
-
-@media (max-width: 1024px) {
-  #logo {
-    max-width: 100%;
-  }
-}
+// Font Family
+$font-family-sans-serif: 'RedHatText', 'Red Hat Text', 'Overpass', Overpass, 'Helvetica Neue', Arial, sans-serif;
+$headings-font-family: 'RedHatDisplay', 'Red Hat Display', 'Overpass', Overpass, 'Helvetica Neue', Arial, sans-serif;
+$font-family-monospace: 'Overpass Mono', Consolas, Monaco, Andale Mono, monospace;
 
 body {
     background: #ffffff;
     font-family: 'Red Hat Text', sans-serif;
+    --pfe-accordion--accent: #307B7D !important; 
+	--pfe-accordion--accent--expanded: #307B7D !important;
+	--pfe-theme--color--ui-accent:  #307B7D !important;
 }
 
 h1,
@@ -54,70 +28,191 @@ h6 {
    font-family: 'Red Hat Display';
 }
 
-header.page-header {
-    padding-bottom: 0;
-    background-image: url('{{ site.baseurl }}/assets/images/contributor-link-header.png');
-}
 
-h2.project-tagline {
-    margin: 0;
-    padding: 1em;
-}
+.contributor-link{
+    
+    &-nav-toggle-wrapper {
+        display: flex;
+        justify-content: flex-end;
 
-a {
-  color: rgba(76, 139, 140, 1);
-}
+        .btn-toggle {
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            align-items: center;
+            padding: 0px 5px;
+            margin-bottom: 0px;
+            color: $white;
+            transition: all 300ms ease-in-out;
+            right: 0;
 
-a:hover {
-  text-decoration-color: rgba(76, 139, 140, 0.5);
-}
+            .menu-bar {
+                width: 30px;
+                height: 3px;
+                background: $white;
+                display: block;
+                margin: 8px 6px;
+                transition: all 400ms ease-in-out;
+                border-radius: 3px;
+            }
 
-// link colors
-$a-tags: 'a, a:active, a:hover, a:visited';
-$a-tags-hover: 'a:active, a:hover';
-
-.wrapper {
-    nav {
-        background: rgba(black, 1);
-        ul.nav-menu {
-            margin: 0;
-            text-align: center;
-            padding: 0.3em;
-            li {
-                display: inline;
-                list-decoration: none;
-                font-size: 110%;
-                font-weight: 600;
-                margin: 0 0.5em 0 0.5em;
-                #{$a-tags} {
-                    color: $nav-text-color;
-                    text-decoration: none;
+            &.active {
+                .menu-bar {
+                    margin: 5px 6px;
                 }
-                #{$a-tags-hover} {
-                    color: $nav-hover-color;
+
+                .menu-bar:nth-child(1) {
+                    transform: rotate(45deg) translate(6px, 5px);
                 }
-	        }
-    	    li.active {
-	    	    #{$a-tags} {
-                    color: $nav-active-color;
+
+                .menu-bar:nth-child(2) {
+                    opacity: 0;
                 }
+
+                .menu-bar:nth-child(3) {
+                    transform: rotate(-45deg) translate(6px, -5px);
+                }
+            }
+
+            &:focus {
+                outline: 1px dotted;
+                outline-offset: 2px;
             }
         }
     }
+
+    &-nav-shelf {
+        position: fixed;
+        top: 68px;
+        bottom: 0px;
+        right: -100%;
+        z-index: 1001;
+        width: 100%;
+        //height: 100%;
+        background-color: $nav-bg-gray;
+        color: $white;
+        transition: all 400ms ease-in-out;
+
+        @media (min-width: breakpoint-min(sm)) {
+            width: 450px;
+            right: -450px;
+        }
+
+        &.shelf-open {
+            right: 0px;
+        }
+
+        button,
+        a:not(.btn) {
+            color: $white;
+            font-family: "Overpass Mono", $font-family-sans-serif;
+        }
+
+        .nav-container {
+            height: 100%;
+            overflow-y: scroll;
+        }
+
+        .nav-group-wrapper {
+            background-size: cover;
+            background-position: right 100px;
+            background-repeat: no-repeat;
+            transition: all 400ms ease-in-out;
+        }
+
+        .accordion-toggle,
+        .accordion-toggle.collapsed,
+        .accordion-panel.show,
+        .accordion-panel.collapsing.showing {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+        }
+
+        .accordion-toggle {
+            font-weight: 700;
+
+            &.collapsed {
+                font-weight: 400;
+            }
+
+            &:focus {
+                text-decoration: none;
+            }
+        }
+
+        .accordion-panel.collapsing,
+        .accordion-toggle:hover {
+            border: none;
+        }
+
+        &-screen {
+            position: fixed;
+            top: 69px;
+            height: 100%;
+            width: 100%;
+            z-index: 97;
+            background-color: $nav-bg-gray;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 400ms cubic-bezier(0.5, 0, 0.5, 1);
+
+            &.shelf-open {
+                opacity: 1;
+                pointer-events: initial;
+            }
+        }
+    }
+
+
 }
 
-footer {
-    text-align: center;
-    #{$a-tags} {
-	color: $body-link-color;
-	text-decoration: none;
-    }
-    #{$a-tags-hover} {
-	color: lighten($body-link-color, 50%);
-    }
-    img#twitter {
-	width: 1.4em;
-	vertical-align: top;
-	margin: 0 0.2em 0 0.2em;
-    }
+.hidden{
+	display: none !important;
 }
+
+.show{
+	display: block !important;
+}
+
+
+
+.product-cards .card{
+
+	@media only screen and (min-width: 800px){
+    	width: 350px;
+    	max-width: 350px;
+    	min-width: 286px;
+	}
+ }
+
+
+/* ============================================== */
+/*  HIDE LESS TEXT WHEN CARD IS NOT EXPANDED
+/* ============================================== */
+    .PFElement[aria-expanded="false"]{
+        .toggle-less{
+            display: none;
+        }
+    }
+
+/* ============================================ */
+/*  HIDE MORE TEXT WHEN CARD IS EXPANDED
+/* ============================================ */
+    .PFElement[aria-expanded="true"]{
+        
+        .toggle-more{
+            display: none;
+        }
+    }
+
+body{
+	
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&family=Red+Hat+Display&display=swap');
+
+
+
+
+
+

@@ -18,6 +18,13 @@
     <meta name="theme-color" content="#25222c">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+      <!-- Studio Web -->
+        <link rel="stylesheet" href="//www.redhat.com/ux/webdms/css/styles.min.css">
+
+    <!-- Libraries -->
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   </head>
   <body>
 	  
@@ -31,24 +38,66 @@
 	
       {% endif %}
 	  
-    <header class="page-header" role="banner">
+     <header role="banner">
 
-      {% if site.logo %}
-        <img id="logo" src="{{ site.logo }}">
-      {% else %}
-        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      {% endif %}
- 
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <section class="dms-band py-12 bg-contain bg-pos-cc bg-no-repeat" data-bg-image="/assets/images/contributor-background.jpg">
+        <div class="container">
+            <div class="row py-12">
+                <div class="col">
+                    <p class="text-center pt-6"><img class="img-fluid" src="/assets/images/logo_contributor-link.svg" width="706" alt="Contributor link logo"></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
     </header>
 
 
 
-    <main id="content" class="main-content" role="main">
-      {{ content }}
 
-      {% include footer.html %}
+    <main id="content" role="main">
+      <section class="dms-band pt-2 pt-lg-6">
+        <div class="">
+            <div class="row">
+                <div class="col-3 d-none d-lg-block pt-12 ml-n3">
+                    <img class="img-fluid pt-12" src="/assets/images/cl-icon-2.svg" width="360" alt="graphic">
+                </div>
+                <div class="col-lg-6 px-4 pl-lg-8">
+                    <p>Contributor.Link connects participating free and open source projects with new contributors of all experience levels and backgrounds, using gateway tools that guide contributors to projects in need of their specific talents. Projects within Contributor.Link use standardized processes to optimize their projects for all potential contributors.</p>
+
+                    <p>Contributor.Link believes that talent and passion are just one connection away from world-changing work. We find and make these connections so that contributors from all different locations, skill levels, and backgrounds can find opportunities to get involved in this work.</p>
+                    <h2>Looking for great projects!</h2>
+                    <p>We are looking for projects that need contributors! When your project participates in Contributor.Link, we will provide a connection between your project and new contributors. As Contributor.Link grows, we will help passionate contributors specify the types of work they are most interested in doing, including:</p>
+                    <ul>
+                      <li>Coding</li>
+                      <li>Graphic design</li>
+                      <li>Writing</li>
+                      <li>Event planning</li>
+                    </ul>
+                    <p>We will then build more robust connections based on interest and skill sets. We will also work with participating projects like yours to improve onboarding processes and materials, making it easier for anyone coming to your project to understand the goals of your work, and how to get involved!</p>
+                </div>
+                <div class="col-lg-3 pt-4 pt-lg-0">
+                    <p class="text-center text-lg-right mr-lg-n6"><img class="img-fluid" src="/assets/images/cl-graphic.svg" width="360" alt="graphic"></p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="dms-band bg-gray-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto text-center">
+            <h2>Join Contributor.Link!</h2>
+            <p>If your project is looking for contributors of any kind, <a href="https://forms.gle/ccZbgwe2owLKX5FN8" title="form">fill out this form</a> if you would like to participate in Contributor.Link!</p>
+            <a href="https://forms.gle/ccZbgwe2owLKX5FN8" title="form" class="btn btn-outline-black">Get started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
 
     </main>
+    {% include footer.html %}
   </body>
 </html>

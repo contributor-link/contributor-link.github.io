@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#25222c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+      <!-- Studio Web -->
+        <link rel="stylesheet" href="//www.redhat.com/ux/webdms/css/styles.min.css">
+
+    <!-- Libraries -->
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  </head>
+  <body>
+	  
+      {% if site.data.navigation %}
+
+        <div class="wrapper">
+          <div class="nav-wrap">
+            {% include nav.html role="navigation" %}
+          </div>
+        </div>
+	
+      {% endif %}
+	  
+     <header role="banner">
+
+      <section class="dms-band py-12 bg-contain bg-pos-cc bg-no-repeat" data-bg-image="/assets/images/contributor-background.jpg">
+        <div class="container">
+            <div class="row py-12">
+                <div class="col">
+                    <p class="text-center pt-6"><img class="img-fluid" src="/assets/images/logo_contributor-link.svg" width="706" alt="Contributor link logo"></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </header>
+
+
+
+
+    <main id="content" role="main">
+      <section class="dms-band">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    {{ content }}
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </section>
+      
+
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

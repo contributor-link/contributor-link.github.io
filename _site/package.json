@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@patternfly/pfe-accordion": "^1.12.3",
+    "@patternfly/pfe-collapse": "^1.12.3"
+  }
+}

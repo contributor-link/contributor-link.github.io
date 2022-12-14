@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text&family=Red+Hat+Display&display=swap");
+body { background: #ffffff; font-family: 'Red Hat Text', sans-serif; --pfe-accordion--accent: #307B7D !important; --pfe-accordion--accent--expanded: #307B7D !important; --pfe-theme--color--ui-accent: #307B7D !important; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Red Hat Display'; }
+
+.contributor-link-nav-toggle-wrapper { display: flex; justify-content: flex-end; }
+.contributor-link-nav-toggle-wrapper .btn-toggle { display: -ms-inline-flexbox; display: inline-flex; align-items: center; padding: 0px 5px; margin-bottom: 0px; color: #fff; transition: all 300ms ease-in-out; right: 0; }
+.contributor-link-nav-toggle-wrapper .btn-toggle .menu-bar { width: 30px; height: 3px; background: #fff; display: block; margin: 8px 6px; transition: all 400ms ease-in-out; border-radius: 3px; }
+.contributor-link-nav-toggle-wrapper .btn-toggle.active .menu-bar { margin: 5px 6px; }
+.contributor-link-nav-toggle-wrapper .btn-toggle.active .menu-bar:nth-child(1) { transform: rotate(45deg) translate(6px, 5px); }
+.contributor-link-nav-toggle-wrapper .btn-toggle.active .menu-bar:nth-child(2) { opacity: 0; }
+.contributor-link-nav-toggle-wrapper .btn-toggle.active .menu-bar:nth-child(3) { transform: rotate(-45deg) translate(6px, -5px); }
+.contributor-link-nav-toggle-wrapper .btn-toggle:focus { outline: 1px dotted; outline-offset: 2px; }
+.contributor-link-nav-shelf { position: fixed; top: 68px; bottom: 0px; right: -100%; z-index: 1001; width: 100%; background-color: #222; color: #fff; transition: all 400ms ease-in-out; }
+@media (min-width: breakpoint-min(sm)) { .contributor-link-nav-shelf { width: 450px; right: -450px; } }
+.contributor-link-nav-shelf.shelf-open { right: 0px; }
+.contributor-link-nav-shelf button, .contributor-link-nav-shelf a:not(.btn) { color: #fff; font-family: "Overpass Mono", "RedHatText", "Red Hat Text", "Overpass", Overpass, "Helvetica Neue", Arial, sans-serif; }
+.contributor-link-nav-shelf .nav-container { height: 100%; overflow-y: scroll; }
+.contributor-link-nav-shelf .nav-group-wrapper { background-size: cover; background-position: right 100px; background-repeat: no-repeat; transition: all 400ms ease-in-out; }
+.contributor-link-nav-shelf .accordion-toggle, .contributor-link-nav-shelf .accordion-toggle.collapsed, .contributor-link-nav-shelf .accordion-panel.show, .contributor-link-nav-shelf .accordion-panel.collapsing.showing { background: transparent; border: none; box-shadow: none; }
+.contributor-link-nav-shelf .accordion-toggle { font-weight: 700; }
+.contributor-link-nav-shelf .accordion-toggle.collapsed { font-weight: 400; }
+.contributor-link-nav-shelf .accordion-toggle:focus { text-decoration: none; }
+.contributor-link-nav-shelf .accordion-panel.collapsing, .contributor-link-nav-shelf .accordion-toggle:hover { border: none; }
+.contributor-link-nav-shelf-screen { position: fixed; top: 69px; height: 100%; width: 100%; z-index: 97; background-color: #222; opacity: 0; pointer-events: none; transition: opacity 400ms cubic-bezier(0.5, 0, 0.5, 1); }
+.contributor-link-nav-shelf-screen.shelf-open { opacity: 1; pointer-events: initial; }
+
+.hidden { display: none !important; }
+
+.show { display: block !important; }
+
+@media only screen and (min-width: 800px) { .product-cards .card { width: 350px; max-width: 350px; min-width: 286px; } }
+
+/* ============================================== */
+/*  HIDE LESS TEXT WHEN CARD IS NOT EXPANDED
+/* ============================================== */
+.PFElement[aria-expanded="false"] .toggle-less { display: none; }
+
+/* ============================================ */
+/*  HIDE MORE TEXT WHEN CARD IS EXPANDED
+/* ============================================ */
+.PFElement[aria-expanded="true"] .toggle-more { display: none; }
